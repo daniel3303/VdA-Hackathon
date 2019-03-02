@@ -12,3 +12,5 @@
 - Define o conceito [lei](concept).
 - Sabes definir [coelho](concept)?
 - Define [humano](concept).
+- O que são [coelhos](concept) e [gatos](concept)?
+- O que é uma [lei](concept) e o que é uma [vaca](concept)?
