@@ -40,3 +40,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+# python -m rasa_core.run -d models/dialogue -u models/current/glosa --port 5002 --credentials config/credentials.yml

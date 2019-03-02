@@ -1,7 +1,14 @@
  ## intent:ask_definition
-- O que é um [coelho]()?
-- O que é uma [vaca]()?
-- O que é um [gato]()?
-- Qual a definição de [gato]()?
-- O que significa [gato]()?
-- Podes dar-me a definição de [humano]()?
+- O que é um [coelho](concept)?
+- O que é uma [vaca](concept)?
+- O que é um [gato](concept)?
+- Qual a definição de [gato](concept)?
+- O que significa [gato](concept)?
+- Podes dar-me a definição de [humano](concept)?
+- [gato](concept)
+- [papel](concept)?
+- O que são [gatos](concept)?
+- Sabes o que é uma [lei](concept)?
+- Define o conceito [lei](concept).
+- Sabes definir [coelho](concept)?
+- Define [humano](concept).

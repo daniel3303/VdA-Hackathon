@@ -1,0 +1,5 @@
+driver: mysql
+user: master@vda.skern.pt
+password: 8tj043xpskern1920
+host: vda.skern.pt
+database: vda

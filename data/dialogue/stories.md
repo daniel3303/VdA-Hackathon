@@ -24,19 +24,19 @@
 * greet
     - utter_greet
 * ask_definition
-    - utter_definition
+    - action_give_definition
 
 ##
 * greet
     - utter_greet
 * ask_definition
-    - utter_definition
+    - action_give_definition
 * goodbye
     - utter_goodbye
     
 ##
 * ask_definition
-    - utter_definition
+    - action_give_definition
 * goodbye
     - utter_goodbye
  

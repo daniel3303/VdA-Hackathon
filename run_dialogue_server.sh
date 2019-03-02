@@ -1,0 +1,1 @@
+python -m rasa_core.run -d models/dialogue --endpoints config/endpoints.yml -u models/current/glosa --port 5000
