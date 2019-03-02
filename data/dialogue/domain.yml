@@ -1,0 +1,30 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - ask_definition
+  - deny
+  - thank_you
+
+actions:
+  - utter_greet
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_definition
+
+templates:
+  utter_greet:
+    - text: "Olá, como estás?"
+
+  utter_did_that_help:
+    - text: "A minha resposta ajudou-o?"
+
+  utter_happy:
+    - text: "Boa, fico feliz!"
+
+  utter_goodbye:
+    - text: "Adeus :)"
+
+  utter_definition:
+    - text: "Vejo que me a definição de um conceito. Infelizmente não tenho essa definição na minha base de dados :("
