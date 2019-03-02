@@ -20,35 +20,38 @@ class ActionFindDefinition(Action):
 
     def run(self, dispatcher, tracker, domain):
         entities = tracker.latest_message['entities']
-        concept = ""
+        concepts = []
 
         #confidence / value
         for entity in entities:
             if entity["entity"] == 'concept':
-                concept = entity["value"]
-                break
+                concepts.append(entity["value"])
+
+        message = ""
+        if len(concepts) > 0:
+            cnx = mysql.connector.connect(user=self.databaseConfig["user"], password=self.databaseConfig["password"],
+                                          host=self.databaseConfig["host"],
+                                          database=self.databaseConfig["database"])
+            cursor = cnx.cursor()
+            for concept in concepts:
+                query = "select name, description from concept where name='{0}' OR '{0}' LIKE CONCAT('%', name, '%')  limit 1".format(concept)
+                print(query)
 
 
-        #concept = "Benfica"
-        query = "select name, description from concept where name='{0}' limit 1".format(concept)
-        print(query)
+                cursor.execute(query)
+                result = cursor.fetchall()
 
-        cnx = mysql.connector.connect(user=self.databaseConfig["user"], password=self.databaseConfig["password"], host=self.databaseConfig["host"],
-                                      database=self.databaseConfig["database"])
-        cursor = cnx.cursor()
-        cursor.execute(query)
-        result = cursor.fetchall()
+                if result != []:
+                    dispatcher.utter_message(result[0][1])
+                else:
+                    dispatcher.utter_message("Desculpa, não conheço o conceito {0}.".format(concept))
 
-        conceptDescription = ""
-        if result != []:
-            conceptDescription = result[0][1]
+            cursor.close()
+            cnx.close()
         else:
-            conceptDescription = "Desculpa, não conheço esse conceito."
+            dispatcher.utter_message("Desculpa, não conheço esse conceito.")
 
-        cursor.close()
-        cnx.close()
 
-        dispatcher.utter_message(conceptDescription)
 
 
 if __name__ == "__main__":
