@@ -39,4 +39,26 @@
     - action_give_definition
 * goodbye
     - utter_goodbye
+
+##
+* greet
+    - utter_greet
+* ask_law
+    - action_give_law
+    
+##
+* ask_law
+    - action_give_law
+    
+##
+* ask_who_are_you
+    - utter_who_i_am
+  
+##
+* greet
+    - utter_greet
+* ask_who_are_you
+    - utter_who_i_am
+* goodbye
+    - utter_goodbye
  

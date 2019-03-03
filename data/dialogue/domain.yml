@@ -3,6 +3,8 @@ intents:
   - goodbye
   - affirm
   - ask_definition
+  - ask_law
+  - ask_who_are_you
   - deny
   - thank_you
 
@@ -12,7 +14,9 @@ actions:
   - utter_happy
   - utter_goodbye
   - action_give_definition
+  - action_give_law
   - utter_not_understand
+  - utter_who_i_am
 
 templates:
   utter_greet:
@@ -27,9 +31,17 @@ templates:
 
   utter_happy:
     - text: "Boa, fico feliz!"
+    - text: ":D"
 
   utter_goodbye:
     - text: "Adeus :)"
+    - text: "Adios ;)"
+    - text: "Tchau!!"
 
   utter_not_understand:
-    - text: "Desculpa, não entendi"
+    - text: "Desculpa, não entendi."
+    - text: "Acho que não entendi..."
+
+  utter_who_i_am:
+    - text: "Eu sou apenas um algoritmo de inteligência artificial."
+    - text: "Eu sou o Glosa, um algoritmo de inteligência artificial."

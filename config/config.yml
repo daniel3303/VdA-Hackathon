@@ -2,6 +2,7 @@ language: pt
 
 pipeline:
   - name: "tokenizer_whitespace"
+  - name: "intent_entity_featurizer_regex"
   - name: "ner_crf"
     features: [
         ["low", "title", "upper"],
