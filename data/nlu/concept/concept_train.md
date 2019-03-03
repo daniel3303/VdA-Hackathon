@@ -14,3 +14,5 @@
 - Define [humano](concept).
 - O que são [coelhos](concept) e [gatos](concept)?
 - O que é uma [lei](concept) e o que é uma [vaca](concept)?
+- O que é o [código cívil](concept)?
+- O que é o [código cívil](concept), uma [lei](concept) e um [papel](concept)?

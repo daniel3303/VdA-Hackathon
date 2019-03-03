@@ -31,7 +31,7 @@ def store_lookup_table(list, name):
     with open('data/nlu/'+name+'/'+name+'_lookup.md', 'w+') as file:
         file.write("## lookup:"+name+"\n")
         for item in list:
-            file.write(item+"\n")
+            file.write("- "+item+"\n")
 
 
 
