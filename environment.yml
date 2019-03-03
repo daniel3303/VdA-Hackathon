@@ -156,5 +156,4 @@ dependencies:
     - werkzeug==0.14.1
     - wrapt==1.10.11
     - zope.interface==4.6.0
-prefix: /Users/Daniel/.conda/envs/VdA-Hackathon-Intelligence
 
