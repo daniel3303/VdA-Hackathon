@@ -1,5 +1,5 @@
 ## lookup:concept
-daniel
-benfica
-gato
-coelho
+- daniel
+- benfica
+- gato
+- coelho
