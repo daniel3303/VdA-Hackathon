@@ -28,3 +28,10 @@
 - Adeus
 - Fica bem
 
+## intent:ask_who_are_you
+- Quem és tu?
+- Tu és humano?
+- És uma pessoa?
+
+
+

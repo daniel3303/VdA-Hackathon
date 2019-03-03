@@ -1,0 +1,11 @@
+ ## intent:ask_law
+- Qual o artigo [56](article) [código cívil](concept)?
+- Qual é o [4](article) do [código cívil](concept)?
+- Qual é o número [35](number) do artigo [56](article) [código cívil](concept)?
+- Número [1](number) do artigo [12](article) [código cívil](concept)?
+- Qual o numero [3](number) do artigo [4](article) [código cívil](concept)?
+- Qual a alínea [a](paragraph), número [3](number) do artigo [3](article) do [código cívil](concept)?
+- Alínea [f](paragraph) do número [6](number) do artigo [87](article) do [código penal](concept)?
+- Sabes-me dizer qual é a alinea [b](paragraph), número [7](number), artigo [42](article) do [código penal](concept)?
+- Qual a alínea [k](paragraph) artigo [13](article) número [2](number) [código cívil](concept)
+- Alínea [l](paragraph) artigo [83](article) número [12](number) do [código cívil](concept)
