@@ -3,3 +3,4 @@
 - benfica
 - gato
 - coelho
+- cão
