@@ -3,3 +3,4 @@ user: master@vda.skern.pt
 password: 8tj043xpskern1920
 host: vda.skern.pt
 database: vda
+rest_url: "http://localhost:8000/api"

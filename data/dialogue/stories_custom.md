@@ -62,10 +62,3 @@
 * goodbye
     - utter_goodbye
  
-##
-* custom_answer_1
-	- utter_custom_answer_1
-
-##
-* custom_answer_2
-	- utter_custom_answer_2
