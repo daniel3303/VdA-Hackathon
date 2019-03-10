@@ -1,10 +1,21 @@
-actions: [utter_greet, utter_did_that_help, utter_happy, utter_goodbye, utter_not_understand,
-  utter_who_i_am, utter_searching_law, action_give_definition, action_give_law, utter_custom_answer_1]
-intents: [greet, goodbye, affirm, ask_definition, ask_law, ask_who_are_you, deny,
-  thank_you, custom_answer_1]
+actions: [utter_greet, utter_greet_again, utter_ask_name, utter_nice_to_meet_you,
+  utter_did_that_help, utter_happy, utter_goodbye, utter_not_understand, utter_who_i_am,
+  utter_searching_law, action_give_definition, action_give_law, utter_thought_you_were_gone,
+  utter_sad_because_you_did_not_provide_your_name, utter_you_are_rude, utter_apologize,
+  utter_custom_answer_1]
+intents: [greet, tell_name, goodbye, affirm, ask_definition, ask_law, ask_who_are_you,
+  deny, thank_you, insult, custom_answer_1]
 slots:
   name: {initial_value: Humano, type: text}
 templates:
+  utter_apologize:
+  - {text: "Pe\xE7o desculpa pelo meu comportamento {name}. :("}
+  - {text: "Pe\xE7o imensa desculpa {name}. :("}
+  - {text: "Pe\xE7o muita desculpa {name} pelo meu comportamento. :("}
+  utter_ask_name:
+  - {text: "Qual \xE9 o teu nome?"}
+  - {text: 'Como te chamas?'}
+  - {text: Diz-me o teu nome}
   utter_custom_answer_1:
   - {text: '{name}, podes comprar livros na Amazon.'}
   utter_did_that_help:
@@ -31,10 +42,19 @@ templates:
   - {text: "Ol\xE1 {name}, faz-me uma pergunta!"}
   - {text: "Ol\xE1 {name} :)"}
   - {text: "Ol\xE1 {name}, como te posso ajudar?"}
+  - {text: "Ol\xE1 {name}. Gosto muito do teu nome."}
+  - {text: "Ol\xE1 {name}, eu sou o Glosa. Faz-me uma pergunta!"}
+  utter_greet_again:
+  - {text: "Outra vez {name}? Pensava que j\xE1 tinhamos passado essa fase."}
+  - {text: "Pensava que j\xE1 nos tinhamos cumprimentado."}
   utter_happy:
   - {text: 'Boa {name}, fico feliz!'}
   - {text: 'Boa, fico feliz!'}
   - {text: ':D'}
+  utter_nice_to_meet_you:
+  - {text: 'Prazer em conhecer-te {name}.'}
+  - {text: 'Que bonito nome {name}!'}
+  - {text: "{name}? N\xE3o gosto desse nome."}
   utter_not_understand:
   - {text: "Desculpa, n\xE3o entendi."}
   - {text: "Acho que n\xE3o entendi..."}
@@ -42,12 +62,23 @@ templates:
   - {text: "{name}, acho que n\xE3o entendi a mensagem..."}
   - {text: "{name}, acho que n\xE3o entendi a mensagem, podes elabor\xE1-la de outra\
       \ forma?"}
+  utter_sad_because_you_did_not_provide_your_name:
+  - {text: "{name} eu percebo que n\xE3o queiras partilhar o teu nome com um estranho..."}
   utter_searching_law:
   - {text: "D\xE1-me um segundo para procurar..."}
   - {text: "Vou procurar, d\xE1-me s\xF3 um segundo..."}
   - {text: "Deixa-me procurar a resposta \xE0 tua quest\xE3o."}
   - {text: Hmm... Deixa-me consultar os meus diplomas legais.}
   - {text: "{name}, d\xE1-me s\xF3 um segundo para procurar..."}
+  utter_thought_you_were_gone:
+  - {text: "Pensava que j\xE1 te tinhas ido embora..."}
+  - {text: "Afinal ainda aqui est\xE1s! :D"}
+  - {text: "{name} fico feliz por n\xE3o te teres ido embora!"}
   utter_who_i_am:
   - {text: "Eu sou apenas um algoritmo de intelig\xEAncia artificial."}
   - {text: "Eu sou o Glosa, um algoritmo de intelig\xEAncia artificial."}
+  utter_you_are_rude:
+  - {text: "Isso \xE9 muito rude da tua parte."}
+  - {text: "{name} est\xE1s a ser muito rude..."}
+  - {text: "Isso \xE9 muito rude {name}. Ficaste chateado com alguma coisa que eu\
+      \ disse?"}
