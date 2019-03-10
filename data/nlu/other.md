@@ -2,6 +2,14 @@
 - Olá
 - Boas
 - Oi
+- Olá, eu sou o [Daniel](name)
+- Olá o meu nome é [Pedro](name).
+- Oi sou o [Miguel](name)
+- Boas chamo-me [Diogo](name)
+- Olá daqui fala o [António](name)
+- Daqui fala o [Tiago](name)
+- Sou o [Francisco](name)
+- Olá, daqui fala o [Marcelo](name), primeiro ministro.
 
 ## intent:goodbye
 - Tchau
@@ -25,8 +33,7 @@
 
 ## intent:thank_you
 - Obrigado
-- Adeus
-- Fica bem
+- Muito obrigado
 
 ## intent:ask_who_are_you
 - Quem és tu?

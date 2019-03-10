@@ -1,4 +1,18 @@
 ##
+* greet{"name": "Daniel"}
+  - slot{"name": "Daniel"}
+  - utter_greet
+  
+##
+* greet{"name": "Miguel"}
+  - slot{"name": "Miguel"}
+  - utter_greet
+* ask_definition
+    - action_give_definition
+* goodbye
+    - utter_goodbye
+
+##
 * greet
     - utter_greet
 * greet
@@ -65,7 +79,3 @@
 ##
 * custom_answer_1
 	- utter_custom_answer_1
-
-##
-* custom_answer_2
-	- utter_custom_answer_2

@@ -3,6 +3,7 @@ from rasa_core_sdk.events import SlotSet
 import mysql.connector
 import yaml
 import requests
+import re
 
 class ActionFindLaw(Action):
 
@@ -31,9 +32,9 @@ class ActionFindLaw(Action):
             if(entity["entity"] == "concept"):
                 legalDocument = entity["value"]
             elif(entity["entity"] == "article"):
-                article = int(entity["value"])
+                article = integer_from_string(entity["value"])
             elif (entity["entity"] == "number"):
-                number = int(entity["value"])
+                number = integer_from_string(entity["value"])
             elif (entity["entity"] == "paragraph"):
                 paragraph = entity["value"]
 
@@ -52,6 +53,7 @@ class ActionFindLaw(Action):
 
             if text is None:
                 return dispatcher.utter_message("Não consegui encontrar o "+legalDocument+".")
+            dispatcher.utter_message("Aqui vai o "+legalDocument+":")
             return dispatcher.utter_message(text)
 
         elif legalDocument is not None and article is not None and number is None:
@@ -60,6 +62,7 @@ class ActionFindLaw(Action):
             if text is None:
                 return dispatcher.utter_message(
                     "Não consegui encontrar o artigo " + str(article) + "º do " + legalDocument + ".")
+            dispatcher.utter_message("Aqui vai o artigo "+str(article)+"º do " + legalDocument + ":")
             return dispatcher.utter_message(text)
 
         elif legalDocument is not None and article is not None and number is not None and paragraph is None:
@@ -68,6 +71,7 @@ class ActionFindLaw(Action):
             if text is None:
                 return dispatcher.utter_message(
                     "Não consegui encontrar o número "+ str(number) +" do artigo " + str(article) + "º do " + legalDocument + ".")
+            dispatcher.utter_message("Aqui vai o número "+str(number)+" do artigo " + str(article) + "º do " + legalDocument + ":")
             return dispatcher.utter_message(text)
 
         elif legalDocument is not None and article is not None and number is not None and paragraph is not None:
@@ -76,7 +80,8 @@ class ActionFindLaw(Action):
             if text is None:
                 return dispatcher.utter_message(
                     "Não consegui encontrar a alínea " + str(paragraph) +") do número " + str(number) + " do artigo " + str(article) + "º do " + legalDocument + ".")
-
+            dispatcher.utter_message(
+                "Aqui vai a alínea "+str(paragraph)+") do número " + str(number) + " do artigo " + str(article) + "º do " + legalDocument + ":")
             return dispatcher.utter_message(text)
 
         return "This should not happen"
@@ -87,14 +92,14 @@ class ActionFindLaw(Action):
     def getLegalDocument(self, legalDocumentJson):
         text = ""
         for article in legalDocumentJson["articles"]:
-            text = text + self.getArticle(legalDocumentJson, article["number"]) + "\n"
+            text += self.getArticle(legalDocumentJson, article["number"]) + "\n"
 
         return text
 
 
     def getArticle(self, legalDocumentJson, article):
+        print("Get article "+str(article))
         articleJson = None
-        text = "Artigo " + str(article) + "º\n"
         for articleI in legalDocumentJson["articles"]:
             if articleI["number"] == article:
                 articleJson = articleI
@@ -103,8 +108,13 @@ class ActionFindLaw(Action):
         if articleJson is None:
             return None
 
-        for number in articleJson["numbers"]:
-            text = text + self.getNumber(legalDocumentJson, article, number["number"]) + "\n"
+        text = "Artigo " + str(article) + "º - "+articleJson["title"]+"\n"
+
+        if articleJson["type"] != "TYPE_SINGLE":
+            for number in articleJson["numbers"]:
+                text += self.getNumber(legalDocumentJson, article, number["number"]) + "\n"
+        else:
+            text += articleJson["description"]
 
         return text
 
@@ -130,8 +140,13 @@ class ActionFindLaw(Action):
         if numberJson is None:
             return None
 
-        for paragraph in numberJson["paragraphs"]:
-            text = text + self.getParagraph(legalDocumentJson, article, number, paragraph["letter"]) + "\n"
+        if numberJson["type"] != "TYPE_SINGLE":
+            for paragraph in numberJson["paragraphs"]:
+                text += self.getParagraph(legalDocumentJson, article, number, paragraph["letter"]) + "\n"
+        else:
+            text += numberJson["description"]
+
+
 
         return text
 
@@ -178,6 +193,11 @@ class ActionFindLaw(Action):
         response = requests.get(restUrl + "/legal-documents", {"name": name})
 
         return response.json()["resources"]
+
+def integer_from_string(string):
+    result = [e for e in re.split("[^0-9]", string) if e != '']
+
+    return max(map(int, result))
 
 
 

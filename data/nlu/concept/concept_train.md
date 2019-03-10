@@ -17,3 +17,6 @@
 - O que é o [código cívil](concept)?
 - O que é o [código cívil](concept), uma [lei](concept) e um [papel](concept)?
 - O que quer dizer [arguido](concept)
+- O que é uma [empresa](concept)?
+- Qual a definição juridica de [empresa](concept)?
+- O QUE É UMA [EMPRESA](concept)?
