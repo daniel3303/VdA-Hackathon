@@ -9,3 +9,6 @@
 - Sabes-me dizer qual é a alinea [b](paragraph), número [7](number), artigo [42](article) do [código penal](concept)?
 - Qual a alínea [k](paragraph) artigo [13](article) número [2](number) [código cívil](concept)
 - Alínea [l](paragraph) artigo [83](article) número [12](number) do [código cívil](concept)
+- Dá-me todos os artigos da [constituição portuguesa](concept)
+- Da me todos os artigos do [codigo civil](concept)
+- Dá-me o [codigo civil](concept)

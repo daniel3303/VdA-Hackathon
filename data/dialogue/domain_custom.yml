@@ -13,10 +13,11 @@ actions:
   - utter_did_that_help
   - utter_happy
   - utter_goodbye
-  - action_give_definition
-  - action_give_law
   - utter_not_understand
   - utter_who_i_am
+  - utter_searching_law
+  - action_give_definition
+  - action_give_law
 
 templates:
   utter_greet:
@@ -24,12 +25,21 @@ templates:
     - text: "Boas!"
     - text: "Olá, faz-me uma pergunta!"
     - text: "Olá :)"
-    - text: "Olá, como te posse ajudar?"
+    - text: "Olá, como te posso ajudar?"
+    - text: "Olá {name}!"
+    - text: "Boas {name}!"
+    - text: "Olá {name}, faz-me uma pergunta!"
+    - text: "Olá {name} :)"
+    - text: "Olá {name}, como te posso ajudar?"
+    - text: "Olá {name}. Gosto muito do teu nome."
+    - text: "Olá {name}, eu sou o Glosa. Faz-me uma pergunta!"
 
   utter_did_that_help:
     - text: "A minha resposta ajudou-te?"
+    - text: "{name}, a minha resposta ajudou-te?"
 
   utter_happy:
+    - text: "Boa {name}, fico feliz!"
     - text: "Boa, fico feliz!"
     - text: ":D"
 
@@ -37,11 +47,32 @@ templates:
     - text: "Adeus :)"
     - text: "Adios ;)"
     - text: "Tchau!!"
+    - text: "Até à próxima!"
+    - text: "Adeus {name} :)"
+    - text: "Adios {name} ;)"
+    - text: "Até à próxima {name}!"
+    - text: "Adeus, foi um prazer conhecer-te {name}!"
+    - text: "Adeus, foi um prazer conhecer-te {name}! :)"
 
   utter_not_understand:
     - text: "Desculpa, não entendi."
     - text: "Acho que não entendi..."
+    - text: "Desculpa {name}, não entendi."
+    - text: "{name}, acho que não entendi a mensagem..."
+    - text: "{name}, acho que não entendi a mensagem, podes elaborá-la de outra forma?"
 
   utter_who_i_am:
     - text: "Eu sou apenas um algoritmo de inteligência artificial."
     - text: "Eu sou o Glosa, um algoritmo de inteligência artificial."
+
+  utter_searching_law:
+    - text: "Dá-me um segundo para procurar..."
+    - text: "Vou procurar, dá-me só um segundo..."
+    - text: "Deixa-me procurar a resposta à tua questão."
+    - text: "Hmm... Deixa-me consultar os meus diplomas legais."
+    - text: "{name}, dá-me só um segundo para procurar..."
+
+slots:
+  name:
+    type: text
+    initial_value: "Humano"
