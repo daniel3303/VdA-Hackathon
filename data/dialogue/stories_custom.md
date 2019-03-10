@@ -192,3 +192,115 @@
     - utter_you_are_rude
  * deny
     - utter_happy
+    
+##
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Corceiro"}
+    - slot{"name": "Corceiro"}
+    - utter_nice_to_meet_you
+* ask_who_are_you
+    - utter_who_i_am
+* insult
+    - utter_you_are_rude
+* affirm
+    - utter_apologize
+* goodbye
+    - utter_goodbye
+    
+##
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Narciso"}
+    - slot{"name": "Narciso"}
+    - utter_nice_to_meet_you
+* ask_who_are_you
+    - utter_who_i_am
+* insult
+    - utter_you_are_rude
+* deny
+    - utter_happy
+* goodbye
+    - utter_goodbye
+    
+##
+* greet{"name": "Miguel"}
+    - slot{"name": "Miguel"}
+    - utter_greet
+* ask_definition
+    - action_give_definition
+* insult
+    - utter_you_are_rude
+    - utter_goodbye
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* affirm
+    - utter_joke
+    - utter_one_more
+* deny
+
+
+##
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Sónia"}
+    - slot{"name": "Sónia"}
+    - utter_nice_to_meet_you
+* ask_who_are_you
+    - utter_who_i_am
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* deny
+* goodbye
+    - utter_goodbye
+    
+##
+* ask_joke
+    - utter_greet
+    - utter_joke
+    - utter_one_more
+* deny
+
+##
+* ask_joke
+    - utter_greet
+    - utter_joke
+    - utter_one_more
+* affirm
+    - utter_joke
+    - utter_ask_name
+* tell_name{"name": "Teresa"}
+    - slot{"name": "Teresa"}
+    - utter_nice_to_meet_you
+    
+##
+* greet
+    - utter_greet
+    - utter_ask_name
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* deny
+* goodbye
+    - utter_goodbye
+    
+##
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Cristina"}
+    - slot{"name": "Cristina"}
+    - utter_nice_to_meet_you
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* deny
+* insult
+    - utter_you_are_rude
+* ask_law
+    - action_give_law

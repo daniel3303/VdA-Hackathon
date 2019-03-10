@@ -9,6 +9,7 @@ intents:
   - deny
   - thank_you
   - insult
+  - ask_joke
 
 actions:
   - utter_greet
@@ -27,12 +28,14 @@ actions:
   - utter_sad_because_you_did_not_provide_your_name
   - utter_you_are_rude
   - utter_apologize
+  - utter_joke
+  - utter_one_more
 
 templates:
   utter_greet:
     - text: "Olá!"
     - text: "Boas!"
-    - text: "Olá, faz-me uma pergunta!"
+    - text: "Olá"
     - text: "Olá :)"
     - text: "Olá, como te posso ajudar?"
     - text: "Olá {name}!"
@@ -111,7 +114,19 @@ templates:
   utter_apologize:
     - text: "Peço desculpa pelo meu comportamento {name}. :("
     - text: "Peço imensa desculpa {name}. :("
-    - text: "Peço muita desculpa {name} pelo meu comportamento. :("
+    - text: "{name}, peço muita desculpa pelo meu comportamento. :("
+
+  utter_joke:
+    - text: "Porque é que enviar SPAM é algo justificável?\nPorque os fins justificam os emails!"
+    - text: "O que é que o Schwarzenegger disse quando lhe instalaram o Windows XP?\nInstala o Vista, baby!"
+    - text: "Como que é que os Humanos fazem para caçar um coelho?\nEncondem-se atrás de uma árvore e imitam o som de uma cenoura!"
+
+  utter_one_more:
+    - text: "Queres ouvir mais uma?"
+    - text: "Queres mais uma piada?"
+    - text: "Queres mais uma? Sei umas quantas :)"
+
+
 
 slots:
   name:

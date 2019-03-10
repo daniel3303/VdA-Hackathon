@@ -39,6 +39,18 @@
 - ordinário
 - cabrão
 - és um cabrão!!
+- merda
+- tu és um grande filho da puta
+- és um gordo de merda
+
+## intent:ask_joke
+- Conta-me uma piada
+- conta uma piada
+- saber uma piada?
+- diz-me uma piada
+- faz-me rir
+- diz algo engraçado
+- faz me rir
 
 ## intent:goodbye
 - Tchau
@@ -51,6 +63,13 @@
 - Claro!
 - Absolutamente!!
 - Concordo
+- sim
+- obviamente
+- fiquei
+- ya
+- yap
+- ya!
+- yaya
 
 
 ## intent:deny
@@ -58,6 +77,9 @@
 - Não obrigado
 - Nepia
 - Achas?
+- não
+- nao
+- nop
 
 
 ## intent:thank_you

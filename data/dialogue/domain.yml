@@ -2,9 +2,9 @@ actions: [utter_greet, utter_greet_again, utter_ask_name, utter_nice_to_meet_you
   utter_did_that_help, utter_happy, utter_goodbye, utter_not_understand, utter_who_i_am,
   utter_searching_law, action_give_definition, action_give_law, utter_thought_you_were_gone,
   utter_sad_because_you_did_not_provide_your_name, utter_you_are_rude, utter_apologize,
-  utter_custom_answer_1]
+  utter_joke, utter_one_more, utter_custom_answer_1]
 intents: [greet, tell_name, goodbye, affirm, ask_definition, ask_law, ask_who_are_you,
-  deny, thank_you, insult, custom_answer_1]
+  deny, thank_you, insult, ask_joke, custom_answer_1]
 slots:
   name: {initial_value: Humano, type: text}
 templates:
@@ -34,7 +34,7 @@ templates:
   utter_greet:
   - {text: "Ol\xE1!"}
   - {text: Boas!}
-  - {text: "Ol\xE1, faz-me uma pergunta!"}
+  - {text: "Ol\xE1"}
   - {text: "Ol\xE1 :)"}
   - {text: "Ol\xE1, como te posso ajudar?"}
   - {text: "Ol\xE1 {name}!"}
@@ -51,6 +51,13 @@ templates:
   - {text: 'Boa {name}, fico feliz!'}
   - {text: 'Boa, fico feliz!'}
   - {text: ':D'}
+  utter_joke:
+  - {text: "Porque \xE9 que enviar SPAM \xE9 algo justific\xE1vel?\nPorque os fins\
+      \ justificam os emails!"}
+  - {text: "O que \xE9 que o Schwarzenegger disse quando lhe instalaram o Windows\
+      \ XP?\nInstala o Vista, baby!"}
+  - {text: "Como que \xE9 que os Humanos fazem para ca\xE7ar um coelho?\nEncondem-se\
+      \ atr\xE1s de uma \xE1rvore e imitam o som de uma cenoura!"}
   utter_nice_to_meet_you:
   - {text: 'Prazer em conhecer-te {name}.'}
   - {text: 'Que bonito nome {name}!'}
@@ -62,6 +69,10 @@ templates:
   - {text: "{name}, acho que n\xE3o entendi a mensagem..."}
   - {text: "{name}, acho que n\xE3o entendi a mensagem, podes elabor\xE1-la de outra\
       \ forma?"}
+  utter_one_more:
+  - {text: 'Queres ouvir mais uma?'}
+  - {text: 'Queres mais uma piada?'}
+  - {text: 'Queres mais uma? Sei umas quantas :)'}
   utter_sad_because_you_did_not_provide_your_name:
   - {text: "{name} eu percebo que n\xE3o queiras partilhar o teu nome com um estranho..."}
   utter_searching_law:
