@@ -1,13 +1,17 @@
-actions: [utter_greet, utter_greet_again, utter_ask_name, utter_nice_to_meet_you,
-  utter_did_that_help, utter_happy, utter_goodbye, utter_not_understand, utter_who_i_am,
-  utter_searching_law, action_give_definition, action_give_law, utter_thought_you_were_gone,
-  utter_sad_because_you_did_not_provide_your_name, utter_you_are_rude, utter_apologize,
-  utter_joke, utter_one_more, utter_custom_answer_1]
-intents: [greet, tell_name, goodbye, affirm, ask_definition, ask_law, ask_who_are_you,
-  deny, thank_you, insult, ask_joke, custom_answer_1]
+actions: [utter_who_i_am, utter_age, utter_searching_law, utter_nice_to_meet_you,
+  utter_happy, utter_joke, utter_apologize, utter_not_understand, utter_goodbye, action_give_definition,
+  action_give_law, utter_greet_again, utter_greet, utter_thought_you_were_gone, utter_ask_name,
+  utter_you_are_beautiful, utter_sad_because_you_did_not_provide_your_name, utter_you_are_rude,
+  utter_did_that_help, utter_one_more]
+entities: [concept, number, article, name]
+intents: [tell_name, greet, ask_who_are_you, ask_joke, ask_law, ask_age, ask_am_i_pretty,
+  goodbye, ask_definition, affirm, deny, thank_you, insult, i_am_happy]
 slots:
   name: {initial_value: Humano, type: text}
 templates:
+  utter_age:
+  - {text: "N\xE3o tenho idade."}
+  - {text: Eu sou algo intemporal...}
   utter_apologize:
   - {text: "Pe\xE7o desculpa pelo meu comportamento {name}. :("}
   - {text: "Pe\xE7o imensa desculpa {name}. :("}
@@ -88,6 +92,8 @@ templates:
   utter_who_i_am:
   - {text: "Eu sou apenas um algoritmo de intelig\xEAncia artificial."}
   - {text: "Eu sou o Glosa, um algoritmo de intelig\xEAncia artificial."}
+  utter_you_are_beautiful:
+  - {text: '{name}, pelo teu modo de falar pareces-me uma pessoa bonita.'}
   utter_you_are_rude:
   - {text: "Isso \xE9 muito rude da tua parte."}
   - {text: "{name} est\xE1s a ser muito rude..."}

@@ -304,3 +304,100 @@
     - utter_you_are_rude
 * ask_law
     - action_give_law
+## Generated Story -1396719676658644124
+* greet
+    - utter_greet
+    - utter_ask_name
+* greet
+    - utter_sad_because_you_did_not_provide_your_name
+    - utter_greet
+* greet
+    - utter_greet_again
+* ask_definition
+    - action_give_definition
+* ask_who_are_you
+    - utter_who_i_am
+* ask_law{"article": "34", "concept": "c\u00f3digo c\u00edvil"}
+    - action_give_law
+* ask_law{"number": "4", "article": "5", "concept": "c\u00f3digo civil"}
+    - action_give_law
+* ask_law{"article": "23", "concept": "constitui\u00e7\u00e3o da r\u00e9publica"}
+    - action_give_law
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* affirm
+    - utter_not_understand
+* ask_definition{"concept": "humano"}
+    - utter_who_i_am
+* ask_who_are_you{"concept": "cebola"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_who_are_you{"concept": "gato"}
+    - action_give_definition
+    - utter_who_i_am
+* goodbye
+    - utter_goodbye
+
+## Generated Story -3916429016676665978
+* greet
+    - utter_greet
+    - utter_ask_name
+* deny
+    - utter_sad_because_you_did_not_provide_your_name
+* ask_who_are_you
+    - utter_who_i_am
+* ask_who_are_you
+    - utter_who_i_am
+* ask_who_are_you{"concept": "gato"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_law{"article": "87", "concept": "constitui\u00e7\u00e3o da r\u00e9publica"}
+    - action_give_law
+* ask_am_i_pretty
+    - utter_you_are_beautiful
+* ask_who_are_you{"concept": "cebola"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_who_are_you
+    - utter_who_i_am
+* ask_definition{"concept": "coisa"}
+    - action_give_definition
+* insult
+    - utter_you_are_rude
+* i_am_happy
+    - utter_happy
+* ask_who_are_you
+    - utter_who_i_am
+* ask_who_are_you{"concept": "humano"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_who_are_you
+    - action_give_definition
+    - utter_who_i_am
+    
+## Generated Story -4660963887069261977
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_who_are_you{"concept": "humano"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_who_are_you{"concept": "cebola"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_law{"article": "57", "concept": "consitui\u00e7\u00e3o portuguesa"}
+    - action_give_law
+* ask_am_i_pretty
+    - utter_you_are_beautiful
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* ask_age
+    - utter_age

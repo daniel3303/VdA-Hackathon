@@ -1,133 +1,136 @@
-intents:
-  - greet
-  - tell_name
-  - goodbye
-  - affirm
-  - ask_definition
-  - ask_law
-  - ask_who_are_you
-  - deny
-  - thank_you
-  - insult
-  - ask_joke
-
+%YAML 1.1
+---
 actions:
-  - utter_greet
-  - utter_greet_again
-  - utter_ask_name
-  - utter_nice_to_meet_you
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
-  - utter_not_understand
-  - utter_who_i_am
-  - utter_searching_law
-  - action_give_definition
-  - action_give_law
-  - utter_thought_you_were_gone
-  - utter_sad_because_you_did_not_provide_your_name
-  - utter_you_are_rude
-  - utter_apologize
-  - utter_joke
-  - utter_one_more
-
-templates:
-  utter_greet:
-    - text: "Olá!"
-    - text: "Boas!"
-    - text: "Olá"
-    - text: "Olá :)"
-    - text: "Olá {name}!"
-    - text: "Boas {name}!"
-    - text: "Olá {name}, faz-me uma pergunta!"
-    - text: "Olá {name} :)"
-    - text: "Olá {name}. Gosto muito do teu nome."
-
-  utter_ask_name:
-    - text: "Qual é o teu nome?"
-    - text: "Como te chamas?"
-    - text: "Diz-me o teu nome"
-    - text: "Se não te importares diz-me o teu nome"
-
-  utter_nice_to_meet_you:
-    - text: "Prazer em conhecer-te {name}."
-    - text: "Que bonito nome {name}!"
-    - text: "{name}? Não gosto desse nome."
-    - text: "Prazer {name}"
-
-  utter_did_that_help:
-    - text: "A minha resposta ajudou-te?"
-    - text: "{name}, a minha resposta ajudou-te?"
-
-  utter_happy:
-    - text: "Boa {name}, fico feliz!"
-    - text: "Boa, fico feliz!"
-    - text: ":D"
-
-  utter_greet_again:
-    - text: "Outra vez {name}? Pensava que já tinhamos passado essa fase."
-    - text: "Pensava que já nos tinhamos cumprimentado."
-
-  utter_goodbye:
-    - text: "Adeus :)"
-    - text: "Adios ;)"
-    - text: "Tchau!!"
-    - text: "Até à próxima!"
-    - text: "Adeus {name} :)"
-    - text: "Adios {name} ;)"
-    - text: "Até à próxima {name}!"
-    - text: "Adeus, foi um prazer conhecer-te {name}!"
-    - text: "Adeus, foi um prazer conhecer-te {name}! :)"
-
-  utter_not_understand:
-    - text: "Desculpa, não entendi."
-    - text: "Acho que não entendi..."
-    - text: "Desculpa {name}, não entendi."
-    - text: "{name}, acho que não entendi a mensagem..."
-    - text: "{name}, acho que não entendi a mensagem, podes elaborá-la de outra forma?"
-
-  utter_who_i_am:
-    - text: "Eu sou apenas um algoritmo de inteligência artificial."
-    - text: "Eu sou o Glosa, um algoritmo de inteligência artificial."
-
-  utter_searching_law:
-    - text: "Dá-me um segundo para procurar..."
-    - text: "Vou procurar, dá-me só um segundo..."
-    - text: "Deixa-me procurar a resposta à tua questão."
-    - text: "Hmm... Deixa-me consultar os meus diplomas legais."
-    - text: "{name}, dá-me só um segundo para procurar..."
-
-  utter_thought_you_were_gone:
-    - text: "Pensava que já te tinhas ido embora..."
-    - text: "Afinal ainda aqui estás! :D"
-    - text: "{name} fico feliz por não te teres ido embora!"
-
-  utter_sad_because_you_did_not_provide_your_name:
-    - text: "{name} eu percebo que não queiras partilhar o teu nome com um estranho..."
-
-  utter_you_are_rude:
-    - text: "Isso é muito rude da tua parte."
-    - text: "{name} estás a ser muito rude..."
-    - text: "Isso é muito rude {name}. Ficaste chateado com alguma coisa que eu disse?"
-
-  utter_apologize:
-    - text: "Peço desculpa pelo meu comportamento {name}. :("
-    - text: "Peço imensa desculpa {name}. :("
-    - text: "{name}, peço muita desculpa pelo meu comportamento. :("
-
-  utter_joke:
-    - text: "Porque é que enviar SPAM é algo justificável?\nPorque os fins justificam os emails!"
-    - text: "O que é que o Schwarzenegger disse quando lhe instalaram o Windows XP?\nInstala o Vista, baby!"
-    - text: "Como que é que os Humanos fazem para caçar um coelho?\nEncondem-se atrás de uma árvore e imitam o som de uma cenoura!"
-
-  utter_one_more:
-    - text: "Queres ouvir mais uma?"
-    - text: "Queres mais uma piada?"
-    - text: "Queres mais uma? Sei umas quantas :)"
-
-
-
+- utter_who_i_am
+- utter_age
+- utter_searching_law
+- utter_nice_to_meet_you
+- utter_happy
+- utter_joke
+- utter_apologize
+- utter_not_understand
+- utter_goodbye
+- action_give_definition
+- action_give_law
+- utter_greet_again
+- utter_greet
+- utter_thought_you_were_gone
+- utter_ask_name
+- utter_you_are_beautiful
+- utter_sad_because_you_did_not_provide_your_name
+- utter_you_are_rude
+- utter_did_that_help
+- utter_one_more
+entities:
+- concept
+- number
+- article
+- name
+intents:
+- tell_name
+- greet
+- ask_who_are_you
+- ask_joke
+- ask_law
+- ask_age
+- ask_am_i_pretty
+- goodbye
+- ask_definition
+- affirm
+- deny
+- thank_you
+- insult
+- i_am_happy
 slots:
   name:
+    initial_value: Humano
     type: text
-    initial_value: "Humano"
+templates:
+  utter_apologize:
+  - text: Peço desculpa pelo meu comportamento {name}. :(
+  - text: Peço imensa desculpa {name}. :(
+  - text: Peço muita desculpa {name} pelo meu comportamento. :(
+  utter_ask_name:
+  - text: Qual é o teu nome?
+  - text: Como te chamas?
+  - text: Diz-me o teu nome
+  utter_custom_answer_1:
+  - text: '{name}, podes comprar livros na Amazon.'
+  utter_did_that_help:
+  - text: A minha resposta ajudou-te?
+  - text: '{name}, a minha resposta ajudou-te?'
+  utter_goodbye:
+  - text: Adeus :)
+  - text: Adios ;)
+  - text: Tchau!!
+  - text: Até à próxima!
+  - text: Adeus {name} :)
+  - text: Adios {name} ;)
+  - text: Até à próxima {name}!
+  - text: Adeus, foi um prazer conhecer-te {name}!
+  - text: Adeus, foi um prazer conhecer-te {name}! :)
+  utter_greet:
+  - text: Olá!
+  - text: Boas!
+  - text: Olá
+  - text: Olá :)
+  - text: Olá, como te posso ajudar?
+  - text: Olá {name}!
+  - text: Boas {name}!
+  - text: Olá {name}, faz-me uma pergunta!
+  - text: Olá {name} :)
+  - text: Olá {name}, como te posso ajudar?
+  - text: Olá {name}. Gosto muito do teu nome.
+  - text: Olá {name}, eu sou o Glosa. Faz-me uma pergunta!
+  utter_greet_again:
+  - text: Outra vez {name}? Pensava que já tinhamos passado essa fase.
+  - text: Pensava que já nos tinhamos cumprimentado.
+  utter_happy:
+  - text: Boa {name}, fico feliz!
+  - text: Boa, fico feliz!
+  - text: :D
+  utter_joke:
+  - text: "Porque é que enviar SPAM é algo justificável?\nPorque os fins justificam\
+      \ os emails!"
+  - text: "O que é que o Schwarzenegger disse quando lhe instalaram o Windows XP?\n\
+      Instala o Vista, baby!"
+  - text: "Como que é que os Humanos fazem para caçar um coelho?\nEncondem-se atrás\
+      \ de uma árvore e imitam o som de uma cenoura!"
+  utter_nice_to_meet_you:
+  - text: Prazer em conhecer-te {name}.
+  - text: Que bonito nome {name}!
+  - text: '{name}? Não gosto desse nome.'
+  utter_not_understand:
+  - text: Desculpa, não entendi.
+  - text: Acho que não entendi...
+  - text: Desculpa {name}, não entendi.
+  - text: '{name}, acho que não entendi a mensagem...'
+  - text: '{name}, acho que não entendi a mensagem, podes elaborá-la de outra forma?'
+  utter_one_more:
+  - text: Queres ouvir mais uma?
+  - text: Queres mais uma piada?
+  - text: Queres mais uma? Sei umas quantas :)
+  utter_sad_because_you_did_not_provide_your_name:
+  - text: '{name} eu percebo que não queiras partilhar o teu nome com um estranho...'
+  utter_searching_law:
+  - text: Dá-me um segundo para procurar...
+  - text: Vou procurar, dá-me só um segundo...
+  - text: Deixa-me procurar a resposta à tua questão.
+  - text: Hmm... Deixa-me consultar os meus diplomas legais.
+  - text: '{name}, dá-me só um segundo para procurar...'
+  utter_thought_you_were_gone:
+  - text: Pensava que já te tinhas ido embora...
+  - text: Afinal ainda aqui estás! :D
+  - text: '{name} fico feliz por não te teres ido embora!'
+  utter_who_i_am:
+  - text: Eu sou apenas um algoritmo de inteligência artificial.
+  - text: Eu sou o Glosa, um algoritmo de inteligência artificial.
+  utter_you_are_beautiful:
+  - text: '{name}, pelo teu modo de falar pareces-me uma pessoa bonita.'
+  utter_you_are_rude:
+  - text: Isso é muito rude da tua parte.
+  - text: '{name} estás a ser muito rude...'
+  - text: Isso é muito rude {name}. Ficaste chateado com alguma coisa que eu disse?
+  utter_age:
+  - text: "Não tenho idade."
+  - text: "Eu sou algo intemporal..."
