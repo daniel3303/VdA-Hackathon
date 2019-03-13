@@ -1,0 +1,1 @@
+python3 -m rasa_core.train interactive --core models/dialogue --nlu models/current/glosa --endpoints config/endpoints.yml -c config/config.yml
