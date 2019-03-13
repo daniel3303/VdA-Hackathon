@@ -17,14 +17,20 @@
 - yup
 - sim
 - Estou curioso
+- sim
+- Ok
 
 ## intent:ask_age
 - que idade tens?
+- qual é a tua idade?
+- quantos anos tens?
+- diz-me a tua idade
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
 - achas-me bonito?
 - achas-me bonito?
+- consideras-me uma pessoa bonita?
 
 ## intent:ask_definition
 - o que é o glosa?
@@ -44,6 +50,8 @@
 - podes-me contar uma piada?
 - faz-me rir
 - conta-me uma piada
+- conta-me uma piada
+- conta-me uma piada
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -56,9 +64,20 @@
 - quais os artigos [1](article), [45](article), [56](article), [23](article), [67](article), [87](article) e [56](article) do [código cívil](concept)?
 - quais os artigos [56](article), [45](article), [23](article), [78](article) e [87](article) da [constituição da républica](concept)?
 - qual é o artigo [45](article), número [3](number) do [código cívil](concept)?
+- Chamo-me [Daniel](name) e gostava que me desses o artigo [1001](article) do [código cívil](concept)
+
+## intent:ask_name
+- Como te chamas?
+- como te chamas?
+- qual é o teu nome?
+- diz-me como te chamas
+- como te chamas?
 
 ## intent:ask_what_can_you_do
 - O que consegues consegues fazer?
+- o que sabes fazer?
+- o que consegues fazer?
+- que tarefas sabes fazer?
 
 ## intent:ask_who_are_you
 - Quem és tu?
@@ -90,6 +109,12 @@
 ## intent:ask_who_created_you
 - quem te fez?
 - quem te criou?
+- quem te construiu?
+- foste contruido por quem?
+- foste feita por quem?
+- foste construida por quem?
+- foste feito por quem?
+- quem te desenhou?
 
 ## intent:deny
 - Não
@@ -103,6 +128,8 @@
 - nao quero
 - não quero dizer o meu nome
 - nao
+- nao
+- nao, obrigado
 
 ## intent:goodbye
 - Tchau
@@ -113,6 +140,9 @@
 - byebye
 - adeus
 - tenho de ir. adeus ;)
+- Adeus
+- obrigado pela tua atenção. adeus ;)
+- adeus glosa
 - Adeus
 
 ## intent:greet
@@ -131,15 +161,10 @@
 - Sou o [Francisco](name)
 - Olá, daqui fala o [Marcelo](name), primeiro ministro.
 - OIoioi
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
 - oioi
-- Olá
 - Olá eu sou o [Daniel](name) e tu?
 - Olá, sou o [Daniel](name)
+- Olá sou o [Daniel](name)
 
 ## intent:i_am_happy
 - estou feliz
@@ -164,6 +189,7 @@
 - tu és um grande filho da puta
 - és um gordo de merda
 - és feia
+- tu és um cabrão
 
 ## intent:tell_name
 - O meu nome é [Joaquim](name)
@@ -179,6 +205,9 @@
 - sou a [Rosario](name)
 - chamo-me [Daniel](name)
 - [Daniel](name) e tu?
+- chamo-me [Daniel](name) e tu?
+- chamo.me [Daniel](name)
+- [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
@@ -190,8 +219,11 @@
 - agradecida
 - agradeço muito
 - obrigado pela tua ajuda
-- obrigado
 
 ## intent:where_were_you_born
 - onde nasceste?
-- onde nasceste?
+- em que sitio nasceste?
+- quando nasceste?
+- aonde nasceste?
+- em que lugar nasceste?
+

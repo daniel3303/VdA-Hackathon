@@ -1,53 +1,55 @@
 %YAML 1.1
 ---
 actions:
-- utter_you_are_rude
-- utter_sad_because_you_did_not_provide_your_name
-- utter_thought_you_were_gone
-- utter_greet
-- utter_happy
-- action_give_definition
-- utter_you_are_beautiful
-- utter_not_understand
-- utter_who_i_am
-- utter_greet_again
-- action_give_law
-- utter_goodbye
-- utter_one_more
-- utter_searching_law
-- utter_apologize
-- utter_what_i_can_do
-- utter_my_creators
-- utter_i_was_not_born
-- utter_age
 - utter_ask_name
 - utter_nice_to_meet_you
-- utter_you_are_welcome
 - utter_did_that_help
+- action_give_definition
+- utter_greet
+- utter_my_name
+- utter_not_understand
+- utter_who_i_am
+- utter_you_are_welcome
+- utter_apologize
+- utter_you_are_beautiful
+- utter_searching_law
+- utter_goodbye
+- action_give_law
+- utter_sad_because_you_did_not_provide_your_name
+- utter_happy
+- utter_thought_you_were_gone
+- utter_what_i_can_do
+- utter_i_was_not_born
+- utter_greet_again
+- utter_you_are_rude
+- utter_my_creators
+- utter_one_more
 - utter_joke
+- utter_age
 entities:
+- article
 - number
 - concept
-- article
 - name
 intents:
-- ask_who_are_you
-- ask_what_can_you_do
+- ask_name
 - greet
-- ask_law
-- where_were_you_born
-- ask_definition
-- goodbye
-- i_am_happy
-- thank_you
+- tell_name
 - ask_who_created_you
+- ask_law
+- goodbye
+- affirm
+- ask_what_can_you_do
+- thank_you
+- insult
+- ask_joke
+- ask_age
 - deny
 - ask_am_i_pretty
-- affirm
-- ask_joke
-- tell_name
-- ask_age
-- insult
+- ask_who_are_you
+- where_were_you_born
+- ask_definition
+- i_am_happy
 slots:
   name:
     initial_value: Humano
@@ -108,6 +110,8 @@ templates:
       \ de uma árvore e imitam o som de uma cenoura!"
   utter_my_creators:
   - text: Eu fui criada por um grupo de jovens estudantes no primeiro Legal Hackathon.
+  utter_my_name:
+  - text: O meu nome é Glosa.
   utter_nice_to_meet_you:
   - text: Prazer em conhecer-te {name}.
   - text: Que bonito nome {name}!
@@ -134,6 +138,10 @@ templates:
   - text: Pensava que já te tinhas ido embora...
   - text: Afinal ainda aqui estás! :D
   - text: '{name} fico feliz por não te teres ido embora!'
+  utter_what_i_can_do:
+  - text: '{name} eu cosigo fazer muitas coisas!\nPor exemplo, sei quase todas as
+      leis da Républica Portuguesa. Também sei contar piadas. O melhor é testares-me.
+      Faz-me uma pergunta!'
   utter_who_i_am:
   - text: Eu sou apenas um algoritmo de inteligência artificial.
   - text: Eu sou o Glosa, um algoritmo de inteligência artificial.
@@ -146,5 +154,3 @@ templates:
   utter_you_are_welcome:
   - text: De nada.
   - text: De nada {name}!
-  utter_what_i_can_do:
-    - text: '{name} eu cosigo fazer muitas coisas!\nPor exemplo, sei quase todas as leis da Républica Portuguesa. Também sei contar piadas. O melhor é testares-me. Faz-me uma pergunta!'
