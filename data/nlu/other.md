@@ -16,6 +16,7 @@
 - claro
 - yup
 - sim
+- Estou curioso
 
 ## intent:ask_age
 - que idade tens?
@@ -23,11 +24,14 @@
 ## intent:ask_am_i_pretty
 - eu sou bonito?
 - achas-me bonito?
+- achas-me bonito?
 
 ## intent:ask_definition
 - o que é o glosa?
 - tu és um [humano](concept)?
 - Sabes uma [coisa](concept)?
+- o que é o [código cívil](concept)?
+- o que é um [humano](concept)?
 
 ## intent:ask_joke
 - Conta-me uma piada
@@ -39,6 +43,7 @@
 - faz me rir
 - podes-me contar uma piada?
 - faz-me rir
+- conta-me uma piada
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -46,6 +51,10 @@
 - quais os artigos [67](article) e [23](article) da [constituição da républica](concept)?
 - quais são os artigos [67](article) e [87](article) da [constituição da républica](concept)?
 - eu gostava de saber o que dizem os artigos [56](article) e [57](article) do da [consituição portuguesa](concept)
+- Chamo-me [Daniel](name). Quero saber quais são os artigos [45](article) e [46](article) do [código cívil](concept).
+- qual é a [lei](concept) [45](article) do [código cívil](concept)?
+- quais os artigos [1](article), [45](article), [56](article), [23](article), [67](article), [87](article) e [56](article) do [código cívil](concept)?
+- quais os artigos [56](article), [45](article), [23](article), [78](article) e [87](article) da [constituição da républica](concept)?
 
 ## intent:ask_who_are_you
 - Quem és tu?
@@ -66,6 +75,13 @@
 - tu és uma maça?
 - tu és [humano](concept)?
 - tu és uma [cebola](concept)?
+- Tu és mesmo inteligente?
+- tu és uma [cebola](concept)?
+- quem és?
+- tu és [humano](concept)?
+
+## intent:ask_who_created_you
+- quem te fez?
 
 ## intent:deny
 - Não
@@ -78,6 +94,7 @@
 - nao nao
 - nao quero
 - não quero dizer o meu nome
+- nao
 
 ## intent:goodbye
 - Tchau
@@ -88,6 +105,7 @@
 - byebye
 - adeus
 - tenho de ir. adeus ;)
+- Adeus
 
 ## intent:greet
 - Olá
@@ -109,9 +127,13 @@
 - Olá
 - Olá
 - Olá
+- Olá
+- oioi
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
+- amo-te
 
 ## intent:insult
 - Fdp
@@ -157,3 +179,8 @@
 - agradecido
 - agradecida
 - agradeço muito
+- obrigado pela tua ajuda
+
+## intent:where_were_you_born
+- onde nasceste?
+- onde nasceste?

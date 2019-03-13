@@ -401,3 +401,68 @@
     - utter_one_more
 * ask_age
     - utter_age
+    
+## Generated Story -179324983298317263
+* greet
+    - utter_greet
+    - utter_ask_name
+* ask_law{"name": "Daniel", "article": "46", "concept": "c\u00f3digo c\u00edvil"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+    - action_give_law
+* affirm
+    - action_default_fallback
+    - rewind
+* ask_who_are_you
+    - utter_who_i_am
+* ask_who_are_you{"concept": "cebola"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_am_i_pretty
+    - utter_you_are_beautiful
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* deny
+    - action_default_fallback
+    - rewind
+* ask_definition{"concept": "c\u00f3digo c\u00edvil"}
+    - action_give_definition
+* where_were_you_born
+    - utter_i_was_not_born
+    - utter_my_creators
+
+## Generated Story -2608403271420667929
+* greet
+    - utter_greet
+    - utter_ask_name
+* ask_law{"concept": "c\u00f3digo c\u00edvil", "article": "45"}
+    - action_give_law
+* where_were_you_born
+    - utter_i_was_not_born
+    - utter_my_creators
+* ask_who_created_you
+    - utter_my_creators
+* ask_who_are_you
+    - utter_who_i_am
+* ask_who_are_you{"concept": "humano"}
+    - action_give_definition
+    - utter_who_i_am
+* i_am_happy
+    - action_default_fallback
+    - rewind
+* ask_law{"article": "56", "concept": "c\u00f3digo c\u00edvil"}
+    - action_give_law
+* ask_law{"article": "87", "concept": "constitui\u00e7\u00e3o da r\u00e9publica"}
+    - action_give_law
+* ask_definition{"concept": "humano"}
+    - action_give_definition
+* thank_you
+    - action_default_fallback
+    - rewind
+* goodbye
+    - utter_goodbye
+* greet
+    - utter_thought_you_were_gone
+    - utter_greet
+

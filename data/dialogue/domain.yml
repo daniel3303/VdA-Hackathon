@@ -1,11 +1,12 @@
-actions: [utter_who_i_am, utter_age, utter_searching_law, utter_nice_to_meet_you,
-  utter_happy, utter_joke, utter_apologize, utter_not_understand, utter_goodbye, action_give_definition,
-  action_give_law, utter_greet_again, utter_greet, utter_thought_you_were_gone, utter_ask_name,
-  utter_you_are_beautiful, utter_sad_because_you_did_not_provide_your_name, utter_you_are_rude,
-  utter_did_that_help, utter_one_more]
-entities: [concept, number, article, name]
-intents: [tell_name, greet, ask_who_are_you, ask_joke, ask_law, ask_age, ask_am_i_pretty,
-  goodbye, ask_definition, affirm, deny, thank_you, insult, i_am_happy]
+actions: [utter_who_i_am, utter_sad_because_you_did_not_provide_your_name, utter_thought_you_were_gone,
+  utter_age, utter_joke, utter_you_are_rude, utter_greet, utter_goodbye, action_give_law,
+  utter_ask_name, utter_you_are_beautiful, utter_greet_again, utter_one_more, utter_nice_to_meet_you,
+  utter_happy, utter_i_was_not_born, action_give_definition, utter_did_that_help,
+  utter_my_creators, utter_apologize, utter_searching_law, utter_not_understand]
+entities: [number, name, concept, article]
+intents: [greet, ask_law, where_were_you_born, ask_definition, goodbye, i_am_happy,
+  ask_who_are_you, thank_you, ask_who_created_you, deny, ask_am_i_pretty, affirm,
+  ask_joke, tell_name, ask_age, insult]
 slots:
   name: {initial_value: Humano, type: text}
 templates:
@@ -55,6 +56,8 @@ templates:
   - {text: 'Boa {name}, fico feliz!'}
   - {text: 'Boa, fico feliz!'}
   - {text: ':D'}
+  utter_i_was_not_born:
+  - {text: "Eu nunca nasci. N\xE3o sou humano nem nenhum animal."}
   utter_joke:
   - {text: "Porque \xE9 que enviar SPAM \xE9 algo justific\xE1vel?\nPorque os fins\
       \ justificam os emails!"}
@@ -62,6 +65,8 @@ templates:
       \ XP?\nInstala o Vista, baby!"}
   - {text: "Como que \xE9 que os Humanos fazem para ca\xE7ar um coelho?\nEncondem-se\
       \ atr\xE1s de uma \xE1rvore e imitam o som de uma cenoura!"}
+  utter_my_creators:
+  - {text: Eu fui criada por um grupo de jovens estudantes no primeiro Legal Hackathon.}
   utter_nice_to_meet_you:
   - {text: 'Prazer em conhecer-te {name}.'}
   - {text: 'Que bonito nome {name}!'}
