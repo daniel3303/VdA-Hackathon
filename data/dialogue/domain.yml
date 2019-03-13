@@ -1,12 +1,13 @@
-actions: [utter_who_i_am, utter_sad_because_you_did_not_provide_your_name, utter_thought_you_were_gone,
-  utter_age, utter_joke, utter_you_are_rude, utter_greet, utter_goodbye, action_give_law,
-  utter_ask_name, utter_you_are_beautiful, utter_greet_again, utter_one_more, utter_nice_to_meet_you,
-  utter_happy, utter_i_was_not_born, action_give_definition, utter_did_that_help,
-  utter_my_creators, utter_apologize, utter_searching_law, utter_not_understand]
-entities: [number, name, concept, article]
-intents: [greet, ask_law, where_were_you_born, ask_definition, goodbye, i_am_happy,
-  ask_who_are_you, thank_you, ask_who_created_you, deny, ask_am_i_pretty, affirm,
-  ask_joke, tell_name, ask_age, insult]
+actions: [utter_you_are_rude, utter_sad_because_you_did_not_provide_your_name, utter_thought_you_were_gone,
+  utter_greet, utter_happy, action_give_definition, utter_you_are_beautiful, utter_not_understand,
+  utter_who_i_am, utter_greet_again, action_give_law, utter_goodbye, utter_one_more,
+  utter_searching_law, utter_apologize, utter_what_i_can_do, utter_my_creators, utter_i_was_not_born,
+  utter_age, utter_ask_name, utter_nice_to_meet_you, utter_you_are_welcome, utter_did_that_help,
+  utter_joke]
+entities: [number, concept, article, name]
+intents: [ask_who_are_you, ask_what_can_you_do, greet, ask_law, where_were_you_born,
+  ask_definition, goodbye, i_am_happy, thank_you, ask_who_created_you, deny, ask_am_i_pretty,
+  affirm, ask_joke, tell_name, ask_age, insult]
 slots:
   name: {initial_value: Humano, type: text}
 templates:
@@ -21,8 +22,6 @@ templates:
   - {text: "Qual \xE9 o teu nome?"}
   - {text: 'Como te chamas?'}
   - {text: Diz-me o teu nome}
-  utter_custom_answer_1:
-  - {text: '{name}, podes comprar livros na Amazon.'}
   utter_did_that_help:
   - {text: 'A minha resposta ajudou-te?'}
   - {text: '{name}, a minha resposta ajudou-te?'}
@@ -94,6 +93,10 @@ templates:
   - {text: "Pensava que j\xE1 te tinhas ido embora..."}
   - {text: "Afinal ainda aqui est\xE1s! :D"}
   - {text: "{name} fico feliz por n\xE3o te teres ido embora!"}
+  utter_what_i_can_do:
+  - {text: "{name} eu cosigo fazer muitas coisas!\\nPor exemplo, sei quase todas as\
+      \ leis da R\xE9publica Portuguesa. Tamb\xE9m sei contar piadas. O melhor \xE9\
+      \ testares-me. Faz-me uma pergunta!"}
   utter_who_i_am:
   - {text: "Eu sou apenas um algoritmo de intelig\xEAncia artificial."}
   - {text: "Eu sou o Glosa, um algoritmo de intelig\xEAncia artificial."}
@@ -104,3 +107,6 @@ templates:
   - {text: "{name} est\xE1s a ser muito rude..."}
   - {text: "Isso \xE9 muito rude {name}. Ficaste chateado com alguma coisa que eu\
       \ disse?"}
+  utter_you_are_welcome:
+  - {text: De nada.}
+  - {text: 'De nada {name}!'}

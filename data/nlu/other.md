@@ -55,11 +55,15 @@
 - qual é a [lei](concept) [45](article) do [código cívil](concept)?
 - quais os artigos [1](article), [45](article), [56](article), [23](article), [67](article), [87](article) e [56](article) do [código cívil](concept)?
 - quais os artigos [56](article), [45](article), [23](article), [78](article) e [87](article) da [constituição da républica](concept)?
+- qual é o artigo [45](article), número [3](number) do [código cívil](concept)?
+
+## intent:ask_what_can_you_do
+- O que consegues consegues fazer?
 
 ## intent:ask_who_are_you
 - Quem és tu?
-- Tu és humano?
-- És uma pessoa?
+- Tu és [humano](concept)?
+- És uma [pessoa](concept)?
 - quem és tu?
 - o que és?
 - quem és tu?
@@ -72,16 +76,20 @@
 - quem és tu glosa?
 - quem és tu glosa?
 - tu és [humano](concept)?
-- tu és uma maça?
+- tu és uma [maça](concept)?
 - tu és [humano](concept)?
 - tu és uma [cebola](concept)?
 - Tu és mesmo inteligente?
 - tu és uma [cebola](concept)?
 - quem és?
 - tu és [humano](concept)?
+- Quem és tu?
+- és uma [banana](concept)?
+- Com quem estou a falar?
 
 ## intent:ask_who_created_you
 - quem te fez?
+- quem te criou?
 
 ## intent:deny
 - Não
@@ -130,6 +138,8 @@
 - Olá
 - oioi
 - Olá
+- Olá eu sou o [Daniel](name) e tu?
+- Olá, sou o [Daniel](name)
 
 ## intent:i_am_happy
 - estou feliz
@@ -180,6 +190,7 @@
 - agradecida
 - agradeço muito
 - obrigado pela tua ajuda
+- obrigado
 
 ## intent:where_were_you_born
 - onde nasceste?

@@ -466,3 +466,29 @@
     - utter_thought_you_were_gone
     - utter_greet
 
+## Generated Story -5459113399447702512
+* greet{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_greet
+    - utter_nice_to_meet_you
+* ask_who_are_you
+    - utter_who_i_am
+* ask_who_created_you
+    - utter_my_creators
+* ask_who_are_you
+    - utter_who_i_am
+* ask_law{"article": "45", "number": "3", "concept": "c\u00f3digo c\u00edvil"}
+    - action_give_law
+* thank_you
+    - utter_you_are_welcome
+
+## Generated Story -5318363549893632449
+* greet{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_greet
+    - utter_nice_to_meet_you
+* ask_who_are_you
+    - utter_who_i_am
+* ask_what_can_you_do
+    - utter_what_i_can_do
+

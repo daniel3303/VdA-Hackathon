@@ -1,41 +1,44 @@
 %YAML 1.1
 ---
 actions:
-- utter_who_i_am
+- utter_you_are_rude
 - utter_sad_because_you_did_not_provide_your_name
 - utter_thought_you_were_gone
-- utter_age
-- utter_joke
-- utter_you_are_rude
 - utter_greet
-- utter_goodbye
-- action_give_law
-- utter_ask_name
-- utter_you_are_beautiful
-- utter_greet_again
-- utter_one_more
-- utter_nice_to_meet_you
 - utter_happy
-- utter_i_was_not_born
 - action_give_definition
-- utter_did_that_help
-- utter_my_creators
-- utter_apologize
-- utter_searching_law
+- utter_you_are_beautiful
 - utter_not_understand
+- utter_who_i_am
+- utter_greet_again
+- action_give_law
+- utter_goodbye
+- utter_one_more
+- utter_searching_law
+- utter_apologize
+- utter_what_i_can_do
+- utter_my_creators
+- utter_i_was_not_born
+- utter_age
+- utter_ask_name
+- utter_nice_to_meet_you
+- utter_you_are_welcome
+- utter_did_that_help
+- utter_joke
 entities:
 - number
-- name
 - concept
 - article
+- name
 intents:
+- ask_who_are_you
+- ask_what_can_you_do
 - greet
 - ask_law
 - where_were_you_born
 - ask_definition
 - goodbye
 - i_am_happy
-- ask_who_are_you
 - thank_you
 - ask_who_created_you
 - deny
@@ -61,8 +64,6 @@ templates:
   - text: Qual é o teu nome?
   - text: Como te chamas?
   - text: Diz-me o teu nome
-  utter_custom_answer_1:
-  - text: '{name}, podes comprar livros na Amazon.'
   utter_did_that_help:
   - text: A minha resposta ajudou-te?
   - text: '{name}, a minha resposta ajudou-te?'
@@ -142,3 +143,8 @@ templates:
   - text: Isso é muito rude da tua parte.
   - text: '{name} estás a ser muito rude...'
   - text: Isso é muito rude {name}. Ficaste chateado com alguma coisa que eu disse?
+  utter_you_are_welcome:
+  - text: De nada.
+  - text: De nada {name}!
+  utter_what_i_can_do:
+    - text: '{name} eu cosigo fazer muitas coisas!\nPor exemplo, sei quase todas as leis da Républica Portuguesa. Também sei contar piadas. O melhor é testares-me. Faz-me uma pergunta!'
