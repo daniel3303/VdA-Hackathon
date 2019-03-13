@@ -94,6 +94,10 @@
 * affirm
     - utter_sad_because_you_did_not_provide_your_name
     - utter_happy
+    
+##
+* ask_age
+    - utter_age
 
 ##
 * greet
@@ -172,14 +176,18 @@
     - utter_ask_name
 * ask_who_are_you
     - utter_who_i_am
-* insult
-    - utter_you_are_rude
+* ask_who_created_you
+    - utter_my_creators
 * goodbye
     - utter_goodbye
  
 ##
  * insult
     - utter_you_are_rude
+    
+##
+ * ask_who_created_you
+    - utter_my_creators
     
 ##
  * insult
@@ -202,8 +210,8 @@
     - utter_nice_to_meet_you
 * ask_who_are_you
     - utter_who_i_am
-* insult
-    - utter_you_are_rude
+* ask_who_created_you
+    - utter_my_creators
 * affirm
     - utter_apologize
 * goodbye
@@ -231,9 +239,8 @@
     - utter_greet
 * ask_definition
     - action_give_definition
-* insult
-    - utter_you_are_rude
-    - utter_goodbye
+* ask_who_created_you
+    - utter_my_creators
 * ask_joke
     - utter_joke
     - utter_one_more
@@ -241,6 +248,8 @@
     - utter_joke
     - utter_one_more
 * deny
+* ask_who_created_you
+    - utter_my_creators
 
 
 ##
@@ -265,6 +274,8 @@
     - utter_joke
     - utter_one_more
 * deny
+* ask_who_created_you
+    - utter_my_creators
 
 ##
 * ask_joke
@@ -286,8 +297,17 @@
     - utter_joke
     - utter_one_more
 * deny
+* ask_who_created_you
+    - utter_my_creators
 * goodbye
     - utter_goodbye
+    
+##
+* greet
+    - utter_greet
+    - utter_ask_name
+* ask_who_created_you
+    - utter_my_creators
     
 ##
 * greet
@@ -300,8 +320,8 @@
     - utter_joke
     - utter_one_more
 * deny
-* insult
-    - utter_you_are_rude
+* ask_who_created_you
+    - utter_my_creators
 * ask_law
     - action_give_law
 ## Generated Story -1396719676658644124
@@ -363,8 +383,8 @@
     - utter_who_i_am
 * ask_definition{"concept": "coisa"}
     - action_give_definition
-* insult
-    - utter_you_are_rude
+* ask_who_created_you
+    - utter_my_creators
 * i_am_happy
     - utter_happy
 * ask_who_are_you
@@ -507,8 +527,8 @@
     - rewind
 * ask_am_i_pretty
     - utter_you_are_beautiful
-* insult
-    - utter_you_are_rude
+* ask_who_created_you
+    - utter_my_creators
 * ask_age
     - utter_age
 * ask_joke
@@ -575,4 +595,31 @@
     - utter_nice_to_meet_you
 * ask_name
     - utter_my_name
+
+## Generated Story 4203520491753131236
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_who_created_you
+    - utter_my_creators
+
+## Generated Story 4151150645143173467
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_who_created_you
+    - utter_my_creators
+
+## Generated Story 1314341730235246741
+* greet
+    - utter_greet
+    - utter_ask_name
+* ask_who_created_you
+    - utter_my_creators
 

@@ -78,6 +78,7 @@
 - o que sabes fazer?
 - o que consegues fazer?
 - que tarefas sabes fazer?
+- o que te posso pedir para fazer?
 
 ## intent:ask_who_are_you
 - Quem és tu?
@@ -115,6 +116,11 @@
 - foste construida por quem?
 - foste feito por quem?
 - quem te desenhou?
+- quem te criou?
+- Quem te criou?
+- Quem te fez?
+- quem te criou?
+- quem te criou?
 
 ## intent:deny
 - Não
@@ -165,6 +171,9 @@
 - Olá eu sou o [Daniel](name) e tu?
 - Olá, sou o [Daniel](name)
 - Olá sou o [Daniel](name)
+- Oi?
+- Olá
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
@@ -172,22 +181,11 @@
 
 ## intent:insult
 - Fdp
-- És parvo
-- és um filho da puta
-- foda-se
-- fodasse
-- caralho
-- vai-te fuder
+- parvo
 - gordo
-- és um gordo
-- és um otário
-- vai para a puta que te pariu
+- és parva
 - ordinário
-- cabrão
-- és um cabrão!!
-- merda
-- tu és um grande filho da puta
-- és um gordo de merda
+- és gordo
 - és feia
 - tu és um cabrão
 
@@ -208,6 +206,8 @@
 - chamo-me [Daniel](name) e tu?
 - chamo.me [Daniel](name)
 - [Daniel](name)
+- [Daniel](name)
+- [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
@@ -226,4 +226,3 @@
 - quando nasceste?
 - aonde nasceste?
 - em que lugar nasceste?
-
