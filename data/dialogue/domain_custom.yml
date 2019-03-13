@@ -37,24 +37,23 @@ templates:
     - text: "Boas!"
     - text: "Olá"
     - text: "Olá :)"
-    - text: "Olá, como te posso ajudar?"
     - text: "Olá {name}!"
     - text: "Boas {name}!"
     - text: "Olá {name}, faz-me uma pergunta!"
     - text: "Olá {name} :)"
-    - text: "Olá {name}, como te posso ajudar?"
     - text: "Olá {name}. Gosto muito do teu nome."
-    - text: "Olá {name}, eu sou o Glosa. Faz-me uma pergunta!"
 
   utter_ask_name:
     - text: "Qual é o teu nome?"
     - text: "Como te chamas?"
     - text: "Diz-me o teu nome"
+    - text: "Se não te importares diz-me o teu nome"
 
   utter_nice_to_meet_you:
     - text: "Prazer em conhecer-te {name}."
     - text: "Que bonito nome {name}!"
     - text: "{name}? Não gosto desse nome."
+    - text: "Prazer {name}"
 
   utter_did_that_help:
     - text: "A minha resposta ajudou-te?"
