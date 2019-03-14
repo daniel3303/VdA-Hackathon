@@ -168,7 +168,6 @@
     - action_give_definition
 * insult
     - utter_you_are_rude
-    - utter_goodbye
     
 ##
 * greet
@@ -182,8 +181,8 @@
     - utter_goodbye
  
 ##
- * insult
-    - utter_you_are_rude
+* ask_age
+    - utter_age
     
 ##
  * ask_who_created_you
@@ -226,10 +225,10 @@
     - utter_nice_to_meet_you
 * ask_who_are_you
     - utter_who_i_am
-* insult
-    - utter_you_are_rude
-* deny
-    - utter_happy
+* ask_age
+    - utter_age
+* ask_who_created_you
+    - utter_my_creators
 * goodbye
     - utter_goodbye
     
@@ -622,4 +621,14 @@
     - utter_ask_name
 * ask_who_created_you
     - utter_my_creators
+
+## Generated Story -1331729027882156700
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_age
+    - utter_age
 

@@ -25,6 +25,7 @@
 - qual é a tua idade?
 - quantos anos tens?
 - diz-me a tua idade
+- quantos anos tens?
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
@@ -174,20 +175,18 @@
 - Oi?
 - Olá
 - Olá
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
 - amo-te
 
 ## intent:insult
-- Fdp
-- parvo
-- gordo
-- és parva
-- ordinário
+- tu és gorda
+- tu és burra
+- és burra
+- és burro
 - és gordo
-- és feia
-- tu és um cabrão
 
 ## intent:tell_name
 - O meu nome é [Joaquim](name)
@@ -208,6 +207,7 @@
 - [Daniel](name)
 - [Daniel](name)
 - [Daniel](name)
+- chamo-me [Daniel](name)
 
 ## intent:thank_you
 - Obrigado

@@ -2,6 +2,7 @@
 
 import mysql.connector
 import yaml
+import os
 
 
 
@@ -71,14 +72,18 @@ def get_custom_answers(settings):
 
 
 def update_custom_answers_train(questions):
-    with open('data/nlu/custom_answer/custom_answer_train.md', 'w+') as file:
-        lastAnswerId = None
-        for question in questions:
-            strippedText = question[0].strip('\n')
-            if(lastAnswerId != question[1]):
-                file.write("## intent:custom_answer_"+str(question[1])+"\n")
-                lastAnswerId = question[1]
-            file.write("- " + strippedText + "\n")
+    if len(questions) > 0:
+        with open('data/nlu/custom_answer/custom_answer_train.md', 'w+') as file:
+            lastAnswerId = None
+            for question in questions:
+                strippedText = question[0].strip('\n')
+                if(lastAnswerId != question[1]):
+                    file.write("## intent:custom_answer_"+str(question[1])+"\n")
+                    lastAnswerId = question[1]
+                file.write("- " + strippedText + "\n")
+    else:
+        os.remove("data/nlu/custom_answer/custom_answer_train.md")
+
 
 def get_custom_domain():
     with open("data/dialogue/domain_custom.yml", 'r') as domain:
