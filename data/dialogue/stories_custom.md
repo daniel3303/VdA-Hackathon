@@ -632,3 +632,26 @@
 * ask_age
     - utter_age
 
+## Generated Story 5634186750287854690
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Sofia"}
+    - slot{"name": "Sofia"}
+    - utter_nice_to_meet_you
+* where_were_you_born
+    - utter_i_was_not_born
+    - utter_my_creators
+* affirm
+    - action_default_fallback
+    - rewind
+* ask_am_i_pretty
+    - utter_you_are_beautiful
+* ask_law{"article": "46", "concept": "constitui\u00e7\u00e3o da r\u00e9publica"}
+    - action_give_law
+* ask_who_are_you
+    - action_give_definition
+    - utter_who_i_am
+* goodbye
+    - utter_goodbye
+

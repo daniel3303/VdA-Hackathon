@@ -1,54 +1,56 @@
 %YAML 1.1
 ---
 actions:
-- utter_happy
-- utter_searching_law
-- utter_nice_to_meet_you
-- utter_my_name
-- utter_you_are_beautiful
-- utter_greet
-- utter_what_i_can_do
-- utter_you_are_rude
-- action_give_law
-- utter_did_that_help
-- utter_ask_name
-- utter_goodbye
-- utter_apologize
-- utter_thought_you_were_gone
-- utter_i_was_not_born
-- utter_sad_because_you_did_not_provide_your_name
-- utter_one_more
-- utter_greet_again
 - utter_age
-- action_give_definition
-- utter_you_are_welcome
+- utter_you_are_rude
+- utter_apologize
 - utter_not_understand
-- utter_joke
-- utter_my_creators
+- utter_searching_law
 - utter_who_i_am
+- utter_did_that_help
+- utter_greet
+- utter_greet_again
+- utter_one_more
+- utter_my_name
+- utter_you_are_welcome
+- utter_you_are_beautiful
+- utter_what_i_can_do
+- utter_joke
+- utter_thought_you_were_gone
+- utter_happy
+- utter_ask_name
+- utter_i_was_not_born
+- utter_goodbye
+- utter_my_creators
+- action_give_law
+- action_give_definition
+- utter_nice_to_meet_you
+- utter_sad_because_you_did_not_provide_your_name
+- utter_i_am_here
 entities:
-- concept
-- article
 - name
+- article
 - number
+- concept
 intents:
+- ask_law
 - tell_name
-- ask_age
+- affirm
+- ask_am_i_pretty
 - greet
+- where_were_you_born
+- goodbye
+- ask_who_are_you
+- ask_age
 - ask_who_created_you
 - ask_name
-- ask_law
-- goodbye
-- affirm
 - ask_what_can_you_do
 - thank_you
 - insult
 - ask_joke
 - deny
-- ask_am_i_pretty
-- ask_who_are_you
-- where_were_you_born
 - ask_definition
+- are_you_there
 - i_am_happy
 slots:
   name:
@@ -154,3 +156,6 @@ templates:
   utter_you_are_welcome:
   - text: De nada.
   - text: De nada {name}!
+  utter_i_am_here:
+    - text: Estou a ouvir-te.
+    - text: 'Estou a ouvir-te {name}.'
