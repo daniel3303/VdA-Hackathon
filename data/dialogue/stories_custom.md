@@ -477,8 +477,7 @@
 * ask_definition{"concept": "humano"}
     - action_give_definition
 * thank_you
-    - action_default_fallback
-    - rewind
+    - utter_you_are_welcome
 * goodbye
     - utter_goodbye
 * greet
@@ -564,8 +563,7 @@
 * ask_what_can_you_do
     - utter_what_i_can_do
 * thank_you
-    - action_default_fallback
-    - rewind
+    - utter_you_are_welcome
 * goodbye
     - utter_goodbye
 
@@ -708,8 +706,7 @@
 * greet
     - utter_greet_again
 * thank_you
-    - action_default_fallback
-    - rewind
+    - utter_you_are_welcome
 * goodbye
     - utter_goodbye
 
@@ -736,4 +733,32 @@
     - utter_you_are_beautiful
 * ask_who_created_you
     - utter_my_creators
+
+## Generated Story -3178462677989252457
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_age
+    - utter_age
+* where_were_you_born
+    - utter_i_was_not_born
+    - utter_my_creators
+* ask_law{"article": "56", "concept": "codigo civil"}
+    - action_give_law
+* thank_you
+    - utter_you_are_welcome
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* deny
+    - action_default_fallback
+    - rewind
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* thank_you
+    - utter_you_are_welcome
 

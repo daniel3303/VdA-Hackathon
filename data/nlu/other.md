@@ -39,6 +39,7 @@
 - qual é a tua idade glosa?
 - quantos anos tens?
 - quantos anos tens?
+- quantos anos tens?
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
@@ -70,6 +71,8 @@
 - conta-me uma piada
 - conta-me uma piada
 - conta-me uma piada
+- conta-me uma piada
+- afinal quero que me contas mais uma piada
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -86,6 +89,7 @@
 - quais são os artigos [45](article) e [46](article) da [constituição da républica](concept)?
 - qual o artigo [56](article) do [codigo civil](concept)?
 - quais são os artigos [45](article), [46](article), [49](article), [51](article), [56](article) e [57](article) do [código civil](concept)?
+- qual é o artigo [56](article) do [codigo civil](concept)
 
 ## intent:ask_name
 - Como te chamas?
@@ -164,6 +168,7 @@
 - nao
 - nao, obrigado
 - nao
+- nao
 
 ## intent:goodbye
 - Tchau
@@ -202,6 +207,7 @@
 - Olá, sou o [Daniel](name)
 - Olá sou o [Daniel](name)
 - Oi?
+- Olá
 - Olá
 - Olá
 - Olá
@@ -257,6 +263,7 @@
 - [Pedro](name)
 - chamo-me [Daniel](name)
 - [Daniel](name) Oliveira
+- [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
@@ -269,6 +276,8 @@
 - agradeço muito
 - obrigado pela tua ajuda
 - Obrigado pela tua ajuda
+- Obrigado
+- obrigado
 
 ## intent:where_were_you_born
 - onde nasceste?
@@ -281,3 +290,4 @@
 - nasceste onde?
 - onde nasceste?
 - em que lugas nasceste?
+- onde nasceste?
