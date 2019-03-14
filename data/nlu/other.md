@@ -28,6 +28,7 @@
 - ainda estás ai?
 - alô?
 - estás aí?
+- estás a ouvir-me?
 
 ## intent:ask_age
 - que idade tens?
@@ -36,6 +37,8 @@
 - diz-me a tua idade
 - quantos anos tens?
 - qual é a tua idade glosa?
+- quantos anos tens?
+- quantos anos tens?
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
@@ -43,6 +46,7 @@
 - achas-me bonito?
 - consideras-me uma pessoa bonita?
 - achas-me bonita por dentro?
+- achas-me bonito?
 
 ## intent:ask_definition
 - o que é o glosa?
@@ -65,6 +69,7 @@
 - conta-me uma piada
 - conta-me uma piada
 - conta-me uma piada
+- conta-me uma piada
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -80,6 +85,7 @@
 - Chamo-me [Daniel](name) e gostava que me desses o artigo [1001](article) do [código cívil](concept)
 - quais são os artigos [45](article) e [46](article) da [constituição da républica](concept)?
 - qual o artigo [56](article) do [codigo civil](concept)?
+- quais são os artigos [45](article), [46](article), [49](article), [51](article), [56](article) e [57](article) do [código civil](concept)?
 
 ## intent:ask_name
 - Como te chamas?
@@ -96,6 +102,7 @@
 - o que consegues fazer?
 - que tarefas sabes fazer?
 - o que te posso pedir para fazer?
+- o que consegues fazer?
 
 ## intent:ask_who_are_you
 - Quem és tu?
@@ -124,6 +131,7 @@
 - és uma [banana](concept)?
 - Com quem estou a falar?
 - tu és humana?
+- com quem estou a falar?
 
 ## intent:ask_who_created_you
 - quem te fez?
@@ -137,6 +145,7 @@
 - quem te criou?
 - Quem te criou?
 - Quem te fez?
+- quem te criou?
 - quem te criou?
 - quem te criou?
 
@@ -170,6 +179,7 @@
 - adeus glosa
 - Adeus
 - adeus glosa, obrigado pela ajuda!
+- adeus glosa :D
 
 ## intent:greet
 - Olá
@@ -197,6 +207,10 @@
 - Olá
 - Olá
 - Olá
+- Olá
+- Olá
+- Olá
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
@@ -217,6 +231,7 @@
 - és uma merda
 - merda
 - vai para o caralho
+- és um bocado burra
 
 ## intent:tell_name
 - O meu nome é [Joaquim](name)
@@ -240,6 +255,8 @@
 - chamo-me [Daniel](name)
 - [Sofia](name) Santos
 - [Pedro](name)
+- chamo-me [Daniel](name)
+- [Daniel](name) Oliveira
 
 ## intent:thank_you
 - Obrigado
@@ -251,6 +268,7 @@
 - agradecida
 - agradeço muito
 - obrigado pela tua ajuda
+- Obrigado pela tua ajuda
 
 ## intent:where_were_you_born
 - onde nasceste?
@@ -261,3 +279,5 @@
 - onde nasceste?
 - onde nasceste?
 - nasceste onde?
+- onde nasceste?
+- em que lugas nasceste?
