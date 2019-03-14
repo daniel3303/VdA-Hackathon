@@ -82,7 +82,8 @@ def update_custom_answers_train(questions):
                     lastAnswerId = question[1]
                 file.write("- " + strippedText + "\n")
     else:
-        os.remove("data/nlu/custom_answer/custom_answer_train.md")
+        if os.path.exists("data/nlu/custom_answer/custom_answer_train.md"):
+            os.remove("data/nlu/custom_answer/custom_answer_train.md")
 
 
 def get_custom_domain():
