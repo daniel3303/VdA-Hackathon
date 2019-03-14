@@ -21,12 +21,21 @@
 - Ok
 - ok
 
+## intent:are_you_there
+- estás aí?
+- glosa?
+- estás a ouvir-me?
+- ainda estás ai?
+- alô?
+- estás aí?
+
 ## intent:ask_age
 - que idade tens?
 - qual é a tua idade?
 - quantos anos tens?
 - diz-me a tua idade
 - quantos anos tens?
+- qual é a tua idade glosa?
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
@@ -55,6 +64,7 @@
 - conta-me uma piada
 - conta-me uma piada
 - conta-me uma piada
+- conta-me uma piada
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -69,6 +79,7 @@
 - qual é o artigo [45](article), número [3](number) do [código cívil](concept)?
 - Chamo-me [Daniel](name) e gostava que me desses o artigo [1001](article) do [código cívil](concept)
 - quais são os artigos [45](article) e [46](article) da [constituição da républica](concept)?
+- qual o artigo [56](article) do [codigo civil](concept)?
 
 ## intent:ask_name
 - Como te chamas?
@@ -76,6 +87,8 @@
 - qual é o teu nome?
 - diz-me como te chamas
 - como te chamas?
+- como te chamas?
+- qual é o teu nome?
 
 ## intent:ask_what_can_you_do
 - O que consegues consegues fazer?
@@ -141,6 +154,7 @@
 - nao
 - nao
 - nao, obrigado
+- nao
 
 ## intent:goodbye
 - Tchau
@@ -178,6 +192,7 @@
 - Olá, sou o [Daniel](name)
 - Olá sou o [Daniel](name)
 - Oi?
+- Olá
 - Olá
 - Olá
 - Olá
@@ -224,6 +239,7 @@
 - [Daniel](name)
 - chamo-me [Daniel](name)
 - [Sofia](name) Santos
+- [Pedro](name)
 
 ## intent:thank_you
 - Obrigado
@@ -243,10 +259,5 @@
 - aonde nasceste?
 - em que lugar nasceste?
 - onde nasceste?
-
-## intent:are_you_there
-- estás aí?
-- glosa?
-- estás a ouvir-me?
-- ainda estás ai?
-- alô?
+- onde nasceste?
+- nasceste onde?
