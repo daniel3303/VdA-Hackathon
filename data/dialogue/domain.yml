@@ -1,12 +1,13 @@
-actions: [utter_sad_because_you_did_not_provide_your_name, utter_greet, utter_you_are_rude,
-  utter_you_are_welcome, utter_i_am_here, utter_happy, utter_what_i_can_do, action_give_definition,
-  utter_did_that_help, utter_greet_again, utter_thought_you_were_gone, utter_apologize,
-  utter_searching_law, utter_my_name, utter_you_are_beautiful, utter_my_creators,
-  utter_goodbye, utter_joke, utter_not_understand, utter_one_more, utter_ask_name,
-  utter_who_i_am, utter_i_was_not_born, action_give_law, utter_nice_to_meet_you, utter_age]
-entities: [number, article, concept, name]
-intents: [where_were_you_born, ask_joke, ask_age, thank_you, greet, deny, tell_name,
-  ask_law, insult, ask_am_i_pretty, ask_who_created_you, affirm, goodbye, ask_who_are_you,
+actions: [action_give_definition, utter_sad_because_you_did_not_provide_your_name,
+  utter_joke, utter_what_i_can_do, utter_happy, utter_ask_name, utter_apologize, utter_searching_law,
+  utter_my_name, utter_you_are_rude, utter_greet_again, utter_who_i_am, utter_not_understand,
+  utter_goodbye, utter_i_was_not_born, utter_i_am_here, utter_nice_to_meet_you, utter_age,
+  utter_you_are_beautiful, utter_your_name, utter_greet, utter_thought_you_were_gone,
+  action_give_law, utter_did_that_help, utter_you_are_welcome, utter_my_creators,
+  utter_one_more]
+entities: [name, concept, article, number]
+intents: [tell_name, ask_age, greet, ask_my_name, where_were_you_born, ask_joke, thank_you,
+  deny, ask_law, insult, ask_am_i_pretty, ask_who_created_you, affirm, goodbye, ask_who_are_you,
   ask_name, ask_what_can_you_do, ask_definition, are_you_there, i_am_happy]
 slots:
   name: {initial_value: Humano, type: text}
@@ -115,3 +116,7 @@ templates:
   utter_you_are_welcome:
   - {text: De nada.}
   - {text: 'De nada {name}!'}
+  utter_your_name:
+  - {text: '{name}.'}
+  - {text: "O teu nome \xE9 {name}."}
+  - {text: "Disseste-me que o teu nome \xE9 {name}."}

@@ -762,3 +762,29 @@
 * thank_you
     - utter_you_are_welcome
 
+## Generated Story -3625720608633061502
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Charuto"}
+    - slot{"name": "Charuto"}
+    - utter_nice_to_meet_you
+* ask_my_name
+    - utter_your_name
+
+## Generated Story -8163351325178425391
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_age
+    - utter_age
+* ask_my_name
+    - utter_your_name
+* ask_my_name
+    - utter_your_name
+* ask_my_name
+    - utter_your_name
+

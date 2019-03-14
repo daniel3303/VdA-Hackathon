@@ -40,6 +40,7 @@
 - quantos anos tens?
 - quantos anos tens?
 - quantos anos tens?
+- quatos anos tens?
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
@@ -90,6 +91,12 @@
 - qual o artigo [56](article) do [codigo civil](concept)?
 - quais são os artigos [45](article), [46](article), [49](article), [51](article), [56](article) e [57](article) do [código civil](concept)?
 - qual é o artigo [56](article) do [codigo civil](concept)
+
+## intent:ask_my_name
+- Coomo é que eu me chamo?
+- como me chamo?
+- qual é o meu nome?
+- sabes o meu nome?
 
 ## intent:ask_name
 - Como te chamas?
@@ -217,6 +224,8 @@
 - Olá
 - Olá
 - Olá
+- Olá
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
@@ -264,6 +273,8 @@
 - chamo-me [Daniel](name)
 - [Daniel](name) Oliveira
 - [Daniel](name)
+- [Charuto](name)
+- chamo-me [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
