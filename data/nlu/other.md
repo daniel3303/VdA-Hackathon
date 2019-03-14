@@ -74,6 +74,7 @@
 - conta-me uma piada
 - conta-me uma piada
 - afinal quero que me contas mais uma piada
+- conta-me uma graça
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -97,6 +98,8 @@
 - como me chamo?
 - qual é o meu nome?
 - sabes o meu nome?
+- como é que eu me chamo?
+- como é que eu disse que me chamava?
 
 ## intent:ask_name
 - Como te chamas?
@@ -106,6 +109,9 @@
 - como te chamas?
 - como te chamas?
 - qual é o teu nome?
+- como te chamas?
+- como é que tu te chamas?
+- como é que disseste que te chamavas?
 
 ## intent:ask_what_can_you_do
 - O que consegues consegues fazer?
@@ -114,6 +120,7 @@
 - que tarefas sabes fazer?
 - o que te posso pedir para fazer?
 - o que consegues fazer?
+- que tarefas sabes desempenhar?
 
 ## intent:ask_who_are_you
 - Quem és tu?
@@ -143,6 +150,8 @@
 - Com quem estou a falar?
 - tu és humana?
 - com quem estou a falar?
+- tu és [humana](concept)?
+- quem és?
 
 ## intent:ask_who_created_you
 - quem te fez?
@@ -156,6 +165,7 @@
 - quem te criou?
 - Quem te criou?
 - Quem te fez?
+- quem te criou?
 - quem te criou?
 - quem te criou?
 - quem te criou?
@@ -192,6 +202,7 @@
 - Adeus
 - adeus glosa, obrigado pela ajuda!
 - adeus glosa :D
+- adeus
 
 ## intent:greet
 - Olá
@@ -216,16 +227,6 @@
 - Oi?
 - Olá
 - Olá
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
-- Olá
 
 ## intent:i_am_happy
 - estou feliz
@@ -247,6 +248,7 @@
 - merda
 - vai para o caralho
 - és um bocado burra
+- vai para a puta que te pariu
 
 ## intent:tell_name
 - O meu nome é [Joaquim](name)
@@ -275,6 +277,8 @@
 - [Daniel](name)
 - [Charuto](name)
 - chamo-me [Daniel](name)
+- chamo-me [Daniel](name)
+- chamo-me [Charuto](name)
 
 ## intent:thank_you
 - Obrigado
@@ -287,6 +291,8 @@
 - agradeço muito
 - obrigado pela tua ajuda
 - Obrigado pela tua ajuda
+- Obrigado
+- obrigado
 - Obrigado
 - obrigado
 
@@ -302,3 +308,5 @@
 - onde nasceste?
 - em que lugas nasceste?
 - onde nasceste?
+- onde é que nasceste?
+- onde foi que nasceste?

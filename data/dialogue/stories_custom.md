@@ -788,3 +788,55 @@
 * ask_my_name
     - utter_your_name
 
+## Generated Story 1970758975871090806
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_name
+    - utter_my_name
+* where_were_you_born
+    - utter_i_was_not_born
+    - utter_my_creators
+* ask_who_created_you
+    - utter_my_creators
+* thank_you
+    - utter_you_are_welcome
+* ask_who_are_you{"concept": "humana"}
+    - action_give_definition
+    - utter_who_i_am
+* ask_what_can_you_do
+    - utter_what_i_can_do
+* ask_my_name
+    - utter_your_name
+* ask_name
+    - utter_my_name
+
+## Generated Story 385611566201169219
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Charuto"}
+    - slot{"name": "Charuto"}
+    - utter_nice_to_meet_you
+* ask_my_name
+    - utter_your_name
+* insult
+    - utter_you_are_rude
+* where_were_you_born
+    - utter_i_was_not_born
+    - utter_my_creators
+* ask_who_are_you
+    - utter_who_i_am
+* ask_joke
+    - utter_joke
+    - utter_one_more
+* ask_name
+    - utter_my_name
+* thank_you
+    - utter_you_are_welcome
+* goodbye
+    - utter_goodbye
+
