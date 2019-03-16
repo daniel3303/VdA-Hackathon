@@ -135,12 +135,19 @@ def generate_story():
 
 
 if __name__ == "__main__":
+    trainCustomQuestions = False
+
     dbSettings = load_database_config()
 
     concepts = load_concepts(dbSettings)
     store_lookup_table(concepts, "concept")
 
-    customQuestions = get_custom_questions(dbSettings)
+    # fetch custom questions
+    if(trainCustomQuestions == True):
+        customQuestions = get_custom_questions(dbSettings)
+    else:
+        customQuestions = []
+
     update_custom_answers_train(customQuestions)
 
     generate_domain(dbSettings)

@@ -5,24 +5,24 @@ import yaml
 import requests
 import re
 
-class ActionFindLaw(Action):
+class ActionFindLawSummary(Action):
 
     databaseConfig = None
 
     def __init__(self):
-      pass
-
+        with open("config/database.yml", 'r') as databaseConfig:
+            try:
+                self.databaseConfig = yaml.load(databaseConfig)
+            except yaml.YAMLError as exc:
+                exit("Error while reading database config file")
 
     def name(self):
         return "action_give_law_summary"
 
     def run(self, dispatcher, tracker, domain):
+        legalDocument = tracker.get_slot('lastLegalDocument')
+        article = integer_from_string(tracker.get_slot('lastArticle'))
 
-        legalDocument = tracker.get_slot('lastLlegalDocument')
-        article = tracker.get_slot('lastArticle')
-
-        print(article)
-        print(legalDocument)
 
         if(article is None or legalDocument is None):
             return [SlotSet("lastArticle", None), SlotSet("lastLegalDocument", None), SlotSet('lastArticleHasSummary', False)]
@@ -49,7 +49,7 @@ class ActionFindLaw(Action):
                         SlotSet('lastArticleHasSummary', False)]
 
 
-            dispatcher.utter_message("Aqui vai o artigo "+str(article)+"º do " + legalDocument + ":")
+            dispatcher.utter_message("Aqui vai a explicação do artigo "+str(article)+"º do " + legalDocument + ":")
             dispatcher.utter_message(text)
             return [SlotSet("lastArticle", None), SlotSet("lastLegalDocument", None),
                     SlotSet('lastArticleHasSummary', False)]
@@ -66,8 +66,10 @@ class ActionFindLaw(Action):
                 articleJson = articleI
                 break
 
-        if articleJson is None or not 'summary' in articleJson:
-            return "Não encontrado."
+        if articleJson is None:
+            return "Artigo não encontrado."
+        elif not 'summary' in articleJson:
+            return "Resumo não encontrado."
 
 
         text = articleJson["summary"]

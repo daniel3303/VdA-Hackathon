@@ -94,6 +94,12 @@
 - quais são os artigos [45](article), [46](article), [49](article), [51](article), [56](article) e [57](article) do [código civil](concept)?
 - qual é o artigo [56](article) do [codigo civil](concept)
 - qual é o artigo [21](article) do [codigo civil](concept)?
+- Qual o artigo [21](article) do [codigo civil](concept)?
+- qual o artigo [34](article) do [código cívil](concept)?
+- dá-me o artigo [21](article) do [codigo civil](concept)
+- dá-me o artigo [21](article) do [codigo civil](concept) sff
+- qual é a lei [45](article) do [código cívil](concept)?
+- qual o artigo [21](article) do [codigo civil](concept)?
 
 ## intent:ask_my_name
 - Coomo é que eu me chamo?
@@ -188,6 +194,11 @@
 - nao, obrigado
 - nao
 - nao
+- nao
+- nao
+- nao entendi
+- nao entendi glosa
+- nao
 
 ## intent:goodbye
 - Tchau
@@ -205,6 +216,8 @@
 - adeus glosa, obrigado pela ajuda!
 - adeus glosa :D
 - adeus
+- Adeus
+- adeus glosa
 
 ## intent:greet
 - Olá
@@ -230,6 +243,9 @@
 - Olá
 - Olá
 - Olá
+- Olá
+- olá
+- Olá glosa
 
 ## intent:i_am_happy
 - estou feliz
@@ -283,6 +299,7 @@
 - chamo-me [Daniel](name)
 - chamo-me [Charuto](name)
 - [Daniel](name)
+- [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
@@ -299,6 +316,9 @@
 - obrigado
 - Obrigado
 - obrigado
+- obrigado
+- obrigado
+- ol´
 
 ## intent:where_were_you_born
 - onde nasceste?

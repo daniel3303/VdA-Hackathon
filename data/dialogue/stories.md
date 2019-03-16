@@ -840,3 +840,44 @@
 * goodbye
     - utter_goodbye
 
+
+## Generated Story -1317303168748792899
+* ask_law{"article": "21", "concept": "codigo civil"}
+    - action_give_law
+    - slot{"lastArticle": "21"}
+    - slot{"lastLegalDocument": "C\u00f3digo Civil"}
+    - slot{"lastArticleHasSummary": true}
+* deny
+    - action_give_law_summary
+    - slot{"lastArticle": null}
+    - slot{"lastLegalDocument": null}
+    - slot{"lastArticleHasSummary": false}
+* ask_law{"article": "34", "concept": "c\u00f3digo c\u00edvil"}
+    - action_give_law
+    - slot{"lastArticle": null}
+    - slot{"lastLegalDocument": null}
+    - slot{"lastArticleHasSummary": false}
+* thank_you
+    - utter_you_are_welcome
+* goodbye
+    - utter_goodbye
+
+## Generated Story 4683699537050526417
+* greet
+    - utter_greet
+    - utter_ask_name
+* ask_law{"article": "21", "concept": "codigo civil"}
+    - action_give_law
+    - slot{"lastArticle": "21"}
+    - slot{"lastLegalDocument": "C\u00f3digo Civil"}
+    - slot{"lastArticleHasSummary": true}
+* deny
+    - action_give_law_summary
+    - slot{"lastArticle": null}
+    - slot{"lastLegalDocument": null}
+    - slot{"lastArticleHasSummary": false}
+* thank_you
+    - utter_you_are_welcome
+* goodbye
+    - utter_goodbye
+
