@@ -27,6 +27,7 @@ class ActionFindLaw(Action):
         article = None
         number = None
         paragraph = None
+        personName = tracker.get_slot('name')
 
         for entity in entities:
             if(entity["entity"] == "concept"):
@@ -48,6 +49,7 @@ class ActionFindLaw(Action):
         legalDocumentJson = legalDocumentJson[0]
 
 
+        # Asked legal document
         if legalDocument is not None and article is None:
             text = self.getLegalDocument(legalDocumentJson)
 
@@ -56,6 +58,7 @@ class ActionFindLaw(Action):
             dispatcher.utter_message("Aqui vai o "+legalDocument+":")
             return dispatcher.utter_message(text)
 
+        # Asked for article in a legal document
         elif legalDocument is not None and article is not None and number is None:
             text = self.getArticle(legalDocumentJson, article)
 
@@ -63,7 +66,16 @@ class ActionFindLaw(Action):
                 return dispatcher.utter_message(
                     "Não consegui encontrar o artigo " + str(article) + "º do " + legalDocument + ".")
             dispatcher.utter_message("Aqui vai o artigo "+str(article)+"º do " + legalDocument + ":")
-            return dispatcher.utter_message(text)
+            dispatcher.utter_message(text)
+            if(self.articleHasSummary(legalDocumentJson, article) == True):
+                dispatcher.utter_message("Entendeste o conteúdo do artigo, "+personName+"?")
+                return [SlotSet("lastArticle", str(article)),
+                        SlotSet("lastLegalDocument", str(self.getLegalDocumentName(legalDocumentJson))),
+                        SlotSet('lastArticleHasSummary', True)]
+            else:
+                pass
+                #dispatcher.utter_message("Não existe resumo disponível.")
+            return [SlotSet("lastArticle", None), SlotSet("lastLegalDocument", None), SlotSet('lastArticleHasSummary', False)]
 
         elif legalDocument is not None and article is not None and number is not None and paragraph is None:
             text = self.getNumber(legalDocumentJson, article, number)
@@ -185,6 +197,18 @@ class ActionFindLaw(Action):
 
         return paragraphJson["description"]
 
+    def getLegalDocumentName(self, legalDocumentJson):
+        return legalDocumentJson["name"]
+
+
+    def articleHasSummary(self, legalDocumentJson, article):
+        for articleI in legalDocumentJson["articles"]:
+            if articleI["number"] == article:
+                if('summary' in articleI and articleI['summary'] != ''):
+                    return True
+                else:
+                    return False
+        return False
 
 
     def getJsonLegalDocument(self, name):

@@ -840,3 +840,17 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story 3318711677179940751
+* greet
+    - utter_greet
+    - utter_ask_name
+* tell_name{"name": "Daniel"}
+    - slot{"name": "Daniel"}
+    - utter_nice_to_meet_you
+* ask_law{"article": "21", "concept": "codigo civil"}
+    - action_give_law
+    - slot{"lastArticle": "21"}
+    - slot{"lastLegalDocument": "C\u00f3digo Civil"}
+* affirm
+    - action_give_law_summary
+

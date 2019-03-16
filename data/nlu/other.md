@@ -20,6 +20,7 @@
 - sim
 - Ok
 - ok
+- sim
 
 ## intent:are_you_there
 - estás aí?
@@ -92,6 +93,7 @@
 - qual o artigo [56](article) do [codigo civil](concept)?
 - quais são os artigos [45](article), [46](article), [49](article), [51](article), [56](article) e [57](article) do [código civil](concept)?
 - qual é o artigo [56](article) do [codigo civil](concept)
+- qual é o artigo [21](article) do [codigo civil](concept)?
 
 ## intent:ask_my_name
 - Coomo é que eu me chamo?
@@ -227,6 +229,7 @@
 - Oi?
 - Olá
 - Olá
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
@@ -279,6 +282,7 @@
 - chamo-me [Daniel](name)
 - chamo-me [Daniel](name)
 - chamo-me [Charuto](name)
+- [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
