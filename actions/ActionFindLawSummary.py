@@ -59,7 +59,6 @@ class ActionFindLawSummary(Action):
 
 
     def getArticleSummary(self, legalDocumentJson, article):
-        print("Get article "+str(article))
         articleJson = None
         for articleI in legalDocumentJson["articles"]:
             if articleI["number"] == article:

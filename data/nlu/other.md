@@ -21,6 +21,8 @@
 - Ok
 - ok
 - sim
+- sim
+- entendi
 
 ## intent:are_you_there
 - estás aí?
@@ -42,6 +44,7 @@
 - quantos anos tens?
 - quantos anos tens?
 - quatos anos tens?
+- que idade tens?
 
 ## intent:ask_am_i_pretty
 - eu sou bonito?
@@ -76,6 +79,7 @@
 - conta-me uma piada
 - afinal quero que me contas mais uma piada
 - conta-me uma graça
+- conta-me uma piada
 
 ## intent:ask_law
 - quais são os artigos [45](article) e [34](article) do [código cívil](concept)?
@@ -100,6 +104,10 @@
 - dá-me o artigo [21](article) do [codigo civil](concept) sff
 - qual é a lei [45](article) do [código cívil](concept)?
 - qual o artigo [21](article) do [codigo civil](concept)?
+- qual é o resumo do artigo [21](article) do [código cívil](concept)?
+- qual é o artigo [34](article) do [codigo civil](concept)?
+- qual é o artigo [21](article) º do [código cívil](concept)?
+- qual é o artigo [21](article) do [codigo civil](concept)?
 
 ## intent:ask_my_name
 - Coomo é que eu me chamo?
@@ -120,6 +128,8 @@
 - como te chamas?
 - como é que tu te chamas?
 - como é que disseste que te chamavas?
+- como é que tu te chamas?
+- como te chamas?
 
 ## intent:ask_what_can_you_do
 - O que consegues consegues fazer?
@@ -199,6 +209,8 @@
 - nao entendi
 - nao entendi glosa
 - nao
+- desculpa nao entendi
+- nao entendi glosa
 
 ## intent:goodbye
 - Tchau
@@ -218,6 +230,7 @@
 - adeus
 - Adeus
 - adeus glosa
+- adeus e obrigado
 
 ## intent:greet
 - Olá
@@ -246,6 +259,8 @@
 - Olá
 - olá
 - Olá glosa
+- olá
+- Olá
 
 ## intent:i_am_happy
 - estou feliz
@@ -300,6 +315,8 @@
 - chamo-me [Charuto](name)
 - [Daniel](name)
 - [Daniel](name)
+- [Daniel](name)
+- [Daniel](name)
 
 ## intent:thank_you
 - Obrigado
@@ -319,6 +336,8 @@
 - obrigado
 - obrigado
 - ol´
+- Obrigado era isso mesmo
+- obrigado
 
 ## intent:where_were_you_born
 - onde nasceste?

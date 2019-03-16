@@ -1,14 +1,14 @@
-actions: [action_give_law_summary, utter_one_more, utter_apologize, action_give_law,
-  utter_sad_because_you_did_not_provide_your_name, utter_greet_again, utter_age, utter_you_are_beautiful,
-  utter_what_i_can_do, utter_you_are_rude, utter_joke, utter_who_i_am, utter_not_understand,
-  utter_greet, utter_your_name, utter_you_are_welcome, utter_happy, utter_goodbye,
-  utter_nice_to_meet_you, utter_i_am_here, utter_ask_name, utter_searching_law, action_give_definition,
-  utter_i_was_not_born, utter_thought_you_were_gone, utter_my_creators, utter_my_name,
-  utter_did_that_help]
-entities: [concept, article, name, number]
-intents: [goodbye, deny, greet, thank_you, ask_law, ask_joke, insult, ask_who_are_you,
-  ask_name, tell_name, ask_my_name, where_were_you_born, ask_what_can_you_do, ask_who_created_you,
-  ask_age, ask_am_i_pretty, affirm, ask_definition, are_you_there, i_am_happy]
+actions: [utter_i_am_here, utter_thought_you_were_gone, utter_greet_again, utter_greet,
+  utter_not_understand, utter_happy, utter_apologize, utter_you_are_beautiful, utter_you_are_welcome,
+  utter_nice_to_meet_you, utter_i_was_not_born, utter_who_i_am, utter_goodbye, utter_my_creators,
+  action_give_definition, utter_my_name, utter_you_are_rude, utter_age, utter_did_that_help,
+  utter_sad_because_you_did_not_provide_your_name, action_give_law, utter_what_i_can_do,
+  utter_joke, utter_ask_name, utter_searching_law, utter_one_more, action_give_law_summary,
+  utter_your_name]
+entities: [article, number, concept, name]
+intents: [affirm, ask_law, goodbye, ask_name, deny, greet, tell_name, ask_joke, ask_age,
+  thank_you, insult, ask_who_are_you, ask_my_name, where_were_you_born, ask_what_can_you_do,
+  ask_who_created_you, ask_am_i_pretty, ask_definition, are_you_there, i_am_happy]
 slots:
   lastArticle: {type: text}
   lastArticleHasSummary: {initial_value: false, type: bool}
@@ -78,7 +78,7 @@ templates:
   utter_nice_to_meet_you:
   - {text: 'Prazer em conhecer-te {name}.'}
   - {text: 'Que bonito nome {name}!'}
-  - {text: "{name}? N\xE3o gosto desse nome."}
+  - {text: '{name}, gosto do teu nome.'}
   utter_not_understand:
   - {text: "Desculpa, n\xE3o entendi."}
   - {text: "Acho que n\xE3o entendi..."}
