@@ -992,3 +992,23 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story 9222706901481121940
+* ask_definition{"concept": "dever"}
+    - action_give_definition
+* ask_definition{"concept": "direito"}
+    - action_give_definition
+* ask_definition{"concept": "\u00f3nus"}
+    - action_give_definition
+* ask_definition{"concept": "sujei\u00e7\u00e3o"}
+    - action_give_definition
+* ask_definition{"concept": "encargo"}
+    - action_give_definition
+* ask_definition{"concept": "dever espec\u00edfico"}
+    - action_give_definition
+* ask_definition{"concept": "dever funcional"}
+    - action_give_definition
+* ask_definition{"concept": "direito absoluto"}
+    - action_give_definition
+* ask_definition{"concept": "faculdade"}
+    - action_give_definition
+

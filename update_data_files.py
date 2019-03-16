@@ -4,7 +4,7 @@ import mysql.connector
 import yaml
 import os
 
-
+trainCustomQuestions = False
 
 def load_database_config():
     with open("config/database.yml", 'r') as databaseConfig:
@@ -36,6 +36,9 @@ def store_lookup_table(list, name):
             file.write("- "+item+"\n")
 
 def get_custom_questions(settings):
+    if(trainCustomQuestions != True):
+        return []
+
     cnx = mysql.connector.connect(user=settings["user"], password=settings["password"], host=settings["host"],
                                   database=settings["database"])
     cursor = cnx.cursor()
@@ -53,6 +56,9 @@ def get_custom_questions(settings):
     return questions
 
 def get_custom_answers(settings):
+    if (trainCustomQuestions != True):
+        return []
+
     cnx = mysql.connector.connect(user=settings["user"], password=settings["password"], host=settings["host"],
                                   database=settings["database"])
     cursor = cnx.cursor()
@@ -127,26 +133,31 @@ def generate_story():
 
         # generate new stories
         for answer in customAnswers:
+            # first story
             story.write("\n##\n")
             story.write("* custom_answer_"+str(answer[0]))
+            story.write("\n\t- utter_custom_answer_" + str(answer[0]) + "\n")
+
+            # second story
+            story.write("\n##\n")
+            story.write("* greet\n")
+            story.write("\t- utter_greet\n")
+            story.write("\t- utter_ask_name\n")
+            story.write("* custom_answer_" + str(answer[0]))
             story.write("\n\t- utter_custom_answer_" + str(answer[0]) + "\n")
 
 
 
 
 if __name__ == "__main__":
-    trainCustomQuestions = False
+
 
     dbSettings = load_database_config()
 
     concepts = load_concepts(dbSettings)
     store_lookup_table(concepts, "concept")
 
-    # fetch custom questions
-    if(trainCustomQuestions == True):
-        customQuestions = get_custom_questions(dbSettings)
-    else:
-        customQuestions = []
+    customQuestions = get_custom_questions(dbSettings)
 
     update_custom_answers_train(customQuestions)
 

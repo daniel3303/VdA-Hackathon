@@ -60,6 +60,15 @@
 - Sabes uma [coisa](concept)?
 - o que é o [código cívil](concept)?
 - o que é um [humano](concept)?
+- o que é um [dever](concept)
+- o que é um [direito](concept)?
+- o que significa [ónus](concept)?
+- qual o significado de uma [sujeição](concept)?
+- o que significa [encargo](concept)?
+- o que é um [dever específica](concept:dever específico)?
+- o que significa [dever funcional](concept)?
+- qual a definição de [direito absoluto](concept)?
+- o que é uma [faculdade](concept)?
 
 ## intent:ask_joke
 - Conta-me uma piada

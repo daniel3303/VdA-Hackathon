@@ -1,3 +1,20 @@
 ## lookup:concept
 - código cívil
-- coisa
+- direito
+- direito potestativo
+- direito relativo
+- direito absoluto
+- poder
+- poder funcional
+- faculdade
+- expetativas
+- situação jurídica ativa
+- situação jurídica passiva
+- obrigação
+- dever
+- dever específico
+- dever genérico
+- dever funcional
+- ónus
+- sujeição
+- encargo
