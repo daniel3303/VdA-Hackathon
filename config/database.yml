@@ -1,6 +1,6 @@
 driver: mysql
-user: master@vda.skern.pt
-password: 8tj043xpskern1920
-host: vda.skern.pt
+user: user
+password: password
+host: localhost
 database: vda
-rest_url: "http://vda.skern.pt/api"
+rest_url: "http://localhost/api"
